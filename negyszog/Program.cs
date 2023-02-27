@@ -60,7 +60,7 @@ namespace negyszog
             this.a = a;
             this.b = b;
         }
-        public Negyszog(int a) { this.a = a; this.b = a;}
+        public Negyszog(int a) { this.a = a; this.b = a; }
 
         // Metódusok
         public void setA(int a)
@@ -70,7 +70,7 @@ namespace negyszog
                 Console.WriteLine("Az oldal nem lehet nagyobb, mint ezer");
             }
             else
-            this.a = a;
+                this.a = a;
         }
         public void setB(int b)
         {
@@ -98,7 +98,7 @@ namespace negyszog
 
     internal class Program
     {
-        enum nyomtat { oldal, kerter, osszes}
+        enum nyomtat { oldal, kerter, osszes }
         static void Main(string[] args)
         {
             // Első példa
@@ -167,7 +167,9 @@ namespace negyszog
                 Console.WriteLine($"Az n1 négyszög oldalai: a = {obj.getA()}, b = {obj.getB()}");
             }
             else
-            Console.WriteLine($"Az n1 négyszög területe = {obj.getTerulet()}, kerulete = {obj.getKerulet()}");
+                Console.WriteLine($"Az n1 négyszög területe = {obj.getTerulet()}, kerulete = {obj.getKerulet()}");
         }
     }
 }
+
+

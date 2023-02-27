@@ -7,80 +7,80 @@ using System.Threading.Tasks;
 namespace kor
 {
     class Kor
-    {   // Osztályváltozók
-        private int r; // "r" oldal
-        private int terulet;
-        private int kerulet;
-        private int sugar;
-        
-        // Konstrokturok
+    {
+        private int r;
+        private double Kerulet;
+        private double Terulet;
         public Kor() { }
-
         public Kor(int r)
         {
             this.r = r;
         }
-        public Kor(int r) { this.r = r;}
 
-        // Metódusok
         public void setR(int r)
         {
-            if (r > 1000)
-            {
-                Console.WriteLine("Az oldal nem lehet nagyobb, mint ezer");
-            }
-            else
-                this.r = r;
+            this.r = r;
         }
-        public int getR() { return r;}
-        public void setTerulet()
+        public int getR(int r) { return this.r = r; }
+        public double setKerulet() => this.Kerulet = 2 * this.r * Math.PI;
+        public double getKerulet()
         {
-            this.terulet = Math.PI * this.r;
+            return this.Kerulet;
         }
-        public int getTerulet()
+        public double setTerulet() => this.Terulet = Math.Pow(r, 2) * Math.PI;
+        public double getTerulet()
         {
-            return this.terulet;
+            return this.Terulet;
         }
-        public void setKerulet()
-        {
-            this.kerulet = 2 * this.r * Math.PI;
-        }
-        public int getKerulet()
-        {
-            return this.kerulet;
-        }
-        public void setSugar() { return r; }
-        public int getSugar() { return terulet; }
     }
-}
-    
-internal class Program
-{
-    enum nyomtat { oldal, kerter, osszes }
-    static void Main(string[] args)
+    class hasab : Kor
     {
-        Kor r = new Kor();
-        kiir(r, nyomtat.oldal);
-        r.setA(1);
+        public int m;
+        public double A;
+        public double V;
 
-        kiir(r, nyomtat.oldal);
 
-        r.setTerulet();
-        r.setKerulet();
-        r.setSugar();
+        public hasab() : base() { }
 
-        kiir(r, nyomtat.kerter);
-        Console.WriteLine();
-        Console.ReadKey(); 
-    }
-    // Metódus
-    static private void kiir(Kor obj, nyomtat v)
-    {
-        if (v == nyomtat.oldal)
+        public hasab(int m, int r) : base(r) { this.m = m; }
+
+        public void setM(int m) { this.m = m; }
+
+        public void setKor()
         {
-            Console.WriteLine($"Az n1 négyszög oldalai: a = {obj.getR()}");
+            base.setKerulet();
+            base.setTerulet();
         }
-        else if { Console.WriteLine($"Az n1 négyszög területe = {obj.getTerulet()}, kerulete = {obj.getKerulet()}"); }
-        else { Console.WriteLine($"Az n1 négyszög sugara = {obj.getSugara()}"); }
+        public void setV()
+        {
+            this.V = base.getTerulet() * this.m;
+        }
+        public void setA()
+        {
+            this.A = 2 * (base.getTerulet()) + (base.getKerulet() * this.m);
+        }
+        public double getV()
+        {
+            return this.V;
+        }
+        public double getA()
+        {
+            return this.A;
+        }
+    }
+
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            hasab teszt1 = new hasab(7, 9);
+            teszt1.setKor();
+            teszt1.setV();
+            teszt1.setA();
+
+            Console.WriteLine($"{teszt1.getV()}, {teszt1.getA()}");
+            Console.ReadKey();
+        }
     }
 }
