@@ -79,7 +79,7 @@ namespace kor
             teszt1.setV();
             teszt1.setA();
 
-            Console.WriteLine($"{teszt1.getV()}, {teszt1.getA()}");
+            Console.WriteLine($"A térfogat: {teszt1.getV()}, és a felszín: {teszt1.getA()}");
             Console.ReadKey();
         }
     }
