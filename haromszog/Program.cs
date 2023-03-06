@@ -12,7 +12,6 @@ namespace haromszog
         private int a;
         private int b;
         private int c;
-        private int m;
         private double Kerulet;
         private double Terulet;
         public haromszog() { }
@@ -21,7 +20,6 @@ namespace haromszog
             this.a = a;
             this.b = b;
             this.c = c;
-            this.m = m;
         }
 
         public void setA(int a)
@@ -38,18 +36,17 @@ namespace haromszog
         {
             this.c = c;
         }
-        public void setM(int m) { this.m = m; }
-        public int getM() 
-        { 
-            return this.m; 
-        }
         public int getC(int c) { return this.c = c; }
         public double setKerulet() => this.Kerulet = a + b + c;  
         public double getKerulet()
         {
             return this.Kerulet;
         }
-        public double setTerulet() => this.Terulet = (a * m) % 2;
+        public double setTerulet()
+        {
+            double s = (double)(this.a + this.b + this.c) / 2;
+            this.Terulet = Math.Round(Math.Sqrt(s * (s - this.a) * (s - this.b) * (s - this.c)), 2);
+        } 
         public double getTerulet()
         {
             return this.Terulet;
@@ -95,7 +92,6 @@ namespace haromszog
             h1.setA(3);
             h1.setB(5);
             h1.setC(6);
-            h1.setM(6);
 
             kiir(h1, nyomtat.oldal);
             h1.setTerulet();
@@ -124,9 +120,9 @@ namespace haromszog
                 Console.WriteLine($"A h1 háromszög területe ={obj.getTerulet()}, kerület = {obj.getKerulet()}");
 
         }
-        static private void kiir(int a, int b, int c, int m)
+        static private void kiir(int a, int b, int c)
         {
         }
-
+        
     }
 }
