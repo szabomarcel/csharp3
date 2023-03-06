@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace atlaghomerseklet
 {
-    internal class index
+    internal class program
     {
         static void Main()
         {
@@ -22,15 +22,15 @@ namespace atlaghomerseklet
     {
         Random random = new Random();
         private int[] Honap;
-        private int index;
+
         public honap()
         {
             Honap = new int[30];
             for (int i = 0; i < Honap.Length; i++) { Honap[i] = random.Next(-20, 43); }
         }
-        public int GetTemp(index)
+        public int GetTemp(int index)
         {
-            return Honap[index];
+            return Honap[ index];
         }
         public int GetMaxTemp()
         {
