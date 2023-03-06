@@ -15,7 +15,7 @@ namespace haromszog
         private double Kerulet;
         private double Terulet;
         public haromszog() { }
-        public haromszog(int a, int b, int c, int m)
+        public haromszog(int a, int b, int c)
         {
             this.a = a;
             this.b = b;
@@ -59,7 +59,7 @@ namespace haromszog
         public double felszin;
         public hasab() : base() { }
 
-        public hasab(int a, int b, int c, int m) : base(a, b, c, m) { this.m2 = m2;}
+        public hasab(int a, int b, int c) : base(a, b, c) { this.m2 = m2;}
         
 
         public void setM2(int m2) { this.m2 = m2; }
@@ -102,7 +102,7 @@ namespace haromszog
 
             Console.WriteLine("hasáb példa");
             hasab h2 = new hasab();
-            h2.setHaromszog();
+            h2.setharomszog();
             h2.setTerfogat();
             h2.setFelszin();
 
