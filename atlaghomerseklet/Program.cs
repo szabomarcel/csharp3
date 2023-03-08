@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,53 +9,38 @@ namespace atlaghomerseklet
 {
     internal class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            // nap: átlag hőmérséklete
             #region
-            honap[] nap = new honap[3];
-            nap[0] = new honap("Első nap");
-            nap[1] = new honap("Második nap");
-            nap[2] = new honap("Harmadik nap");
-            Console.WriteLine("Az átlag hömérsélet: ");
-            foreach (honap random in Random)
+            var homerseklet = new List<int>();
+            var random = new Random();
+            for (int i = 1; i < 10; i++)
             {
-                Console.WriteLine(nap.GetTemp(3));
+                homerseklet.Add(random.Next(-20, 43));
             }
-            nap[0].GetMinTemp() = "Atlaghomerseklet";
-            nap[1].GetMinTemp() = "Atlaghomerseklet";
+            int min = homerseklet.Min();
+            Console.WriteLine("Legkisebb: " + min);
+            Console.WriteLine("Legnagyobb: " + homerseklet.Max());
+            Console.WriteLine("Melyik nap a leghidegebb: " + (homerseklet.IndexOf(min) + 1));
+            homerseklet.Sort();
+            Console.WriteLine("Növekvő sorrend: " + string.Join(", ",homerseklet));
             #endregion
 
-            // honap: átlag hőmérséglete
             #region
-            honap[] honap = new honap[3];
-            honap[0] = new honap("Első hónap");
-            honap[1] = new honap("Második hónap"); 
-            honap[2] = new honap("Harmadik hónap");
-            Console.WriteLine("Az átlag hömérsélet: ");
-            foreach (honap random in Random)
+            var homerseklet2 = new List<int>();
+            var Random = new Random();
+            for (int i = 1; i < 10; i++)
             {
-                Console.WriteLine(honap.GetTemp(3));
+                homerseklet2.Add(Random.Next(-20, 43));
             }
-            honap[0].GetMinTemp() = "Atlaghomerseklet";
-            honap[1].GetMaxTemp() = "Atlaghomerseklet";
+            int Min = homerseklet2.Min();
+            Console.WriteLine("Legkisebb: " + Min);
+            Console.WriteLine("Legnagyobb: " + homerseklet2.Max());
+            Console.WriteLine("Melyik hónapban a leghidegebb: " + (homerseklet2.IndexOf(Min) + 1));
+            homerseklet.Sort();
+            Console.WriteLine("Növekvő sorrend: " + string.Join(", ", homerseklet2));
             #endregion
-
-            Console.Write("Adj meg egy hőmérséklet értékét:");
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine("Válassz opciót: (1) Nap (2) Hónap : ");
-            byte c = byte.Parse(Console.ReadLine());
-            Console.WriteLine();
-            switch (c)
-            {
-                case 1:
-                    Console.WriteLine("{0} Nap"); break;
-                case 2:
-                    Console.WriteLine("{0} Hónap"); break;
-            }
-            Console.ReadKey();
-            Console.ReadLine();
         }
-       
+
     }
 }
