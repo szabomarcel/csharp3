@@ -29,12 +29,12 @@ namespace hofokOOP
         static string[] honapok = { "január", "február", "március", "április", "május", "június", "július", "augusztust", "szeptember", "október", "november", "december" };
 
         // Konstructor
-        hofokszamitas(int[,]p) 
+        public hofokszamitas(int[,]p) 
         {
             this.adat = p;
         }
 
-        //Eredmények ádadó metódusok
+        //Eredmények átadó metódusok
         public NapiAdat getNapiMin()
         {
             return napiMin;
@@ -68,8 +68,8 @@ namespace hofokOOP
             setHaviAtlag();
             setHaviMaxMin();
 
-            //Folyamatos 5 minuszis nap liszámítása
-            setOtMinusz();
+            // Folyamatos 5 minuszis nap liszámítása
+            // setOtMinusz();
 
         }
 
@@ -181,11 +181,10 @@ namespace hofokOOP
                     }
                     // Eredmény átadása a tömbnek
                     this.napiMax.honap = honapok[maxI];
-                    this.napiMax.nap = maxJ + 1; // MIvel nulladik nap nincs a hónapban ezért hozzá kell adni 1-t
+                    this.napiMax.nap = maxJ + 1; // Mivel nulladik nap nincs a hónapban ezért hozzá kell adni 1-t
                     this.napiMax.hofok = max;
                 }
             }
-
         }
     }
 }
