@@ -10,9 +10,9 @@ namespace TTomegOOP
     {
         public string tomeg; // A testtömeg nev
     }
-    struct TestMagasság
+    struct TestMagassag
     {
-        public string magass;
+        public string magass; // A testmagasság
     }
     internal class TestTomeg
     {
@@ -23,17 +23,26 @@ namespace TTomegOOP
         // Konstuktor
         public TestTomeg(int[,] p)
         {
-
+            this.Equals(p);
         }
 
         // Tömeg bekérés
         int m = int.Parse(Console.ReadLine());
+        private Testtomeg testT;
+        private TestMagassag testM;
 
         // Súly bekérés
-
-
+        public Testtomeg GetTesttomeg()
+        {
+            return testT;
+        }
+    
+        public TestMagassag GetTestMagassag()
+        {
+            return testM;
+        }
         // Testtömeg index kiszámítása
-        private void testtomeg()
+        private void testTomeg()
         {
             int testtomeg = 0;
             if (testtomeg < 16) 
@@ -57,11 +66,13 @@ namespace TTomegOOP
                 Console.WriteLine("Túlsúlyos");
             }
         }
-        
+
 
         // Testtömeg index lekérése
-
-
-
+        public int this [int index]
+        {
+            get => testTomeg[index];
+            set => testTomeg[index];
+        }
     }
 }
