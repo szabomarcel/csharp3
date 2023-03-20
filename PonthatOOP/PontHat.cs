@@ -13,20 +13,21 @@ namespace PonthatOOP
     internal class PontHat
     {
         // Osztlyváltozók
-        private PontAdat[] osztalyzat = new PontAdat[0]; // A pontadat tömbje
+        private int pont;
         static string[] jegyek = { "elégtelen", "elégséges", "közepes", "jó", "jeles" };
+        private int jegy = 0; // Gyűjtés
 
         // Konstruktor
-        public PontHat(int[,]k) 
+        public PontHat(int k) 
         {
 
-            this.osztalyzat = k;
+            this.pont = k;
         }
 
         // Eredmények átadó metódusok
-        public PontAdat getPontAdat()
+        public string getOsztalyzat()
         {
-            return this.osztalyzat[0];
+            return jegyek[jegy - 1];
         }
         public void szamitas()
         {
@@ -35,13 +36,12 @@ namespace PonthatOOP
         }
         private void setPontAdat()
         {
-            int pont = 0; // Gyűjtés
-            if (pont >= 0 && pont < 50) osztalyzat = 1;
-            else if (pont >= 50 && pont < 65) osztalyzat = 2;
-            else if (pont >= 65 && pont < 80) osztalyzat = 3;
-            else if (pont >= 80 && pont < 90) osztalyzat = 4;
-            else if (pont >= 90 && pont <= 100) osztalyzat = 5;
-            else osztalyzat = 0;
+            if (this.pont >= 0 && this.pont < 50) this.jegy = 1;
+            else if (this.pont >= 50 && this.pont < 65) this.jegy= 2;
+            else if (this.pont >= 65 && this.pont < 80) this.jegy= 3;
+            else if (this.pont >= 80 && this.pont < 90) this.jegy= 4;
+            else if (this.pont >= 90 && this.pont <= 100) this.jegy = 5;
+            else this.jegy = 0;
         }
 
             
