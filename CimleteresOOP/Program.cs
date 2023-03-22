@@ -10,9 +10,15 @@ namespace CimleteresOOP
     {
         static void Main(string[] args)
         {
-            Console.Write("Írjon be egy összeget:");
+            Random rnd = new Random();
+            int[] randomszamok = new int[14];
+            Console.Write("Írjon be egy összeget: ");
             int penz = Convert.ToInt32(Console.ReadLine());
             int cimlet_helye = 0;
+            for (int i = 0;i < randomszamok.Length; i++)
+            {
+                randomszamok[i] = rnd.Next(1, 20000);
+            }
             while (penz >= 0 && penz <= 20000)
             {
                 int mennyiseg = penz / penzfajtak(cimlet_helye);

@@ -6,46 +6,44 @@ using System.Threading.Tasks;
 
 namespace CimleteresOOP
 {
+    struct penz
+    {
+        public int id; // Penzerme neve
+    }
     internal class penzerme
     {
-        struct penz
+        // Osztályváltozók
+        private int penz;
+        public static string[] penzfajtak = [20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+        private int penzermek = 0;
+
+        //Konstruktor
+        public (int p)
         {
-            public int id; // Penzerme neve
+            this.penz = p;
+        }    
+
+        // Eredmények átadó metódusok
+        public string GetPenzerme()
+        {
+            return this.GetPenzerme();
         }
-        internal class PontHat
+        public void Szamitasa()
         {
-            // Osztályváltozók
-            private int penz;
-            static string[] penzfajtak = [ 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1 ];
-            private int penzermek = 0;
-
-            //Konstruktor
-            public penzerme(int p)
+            // Kerekités számítás
+            object value = SetPenz();
+        }
+        private void SetPenz()
+        {
+            int osszeg = 0;
+            for (int i = 0; i < osszeg.Length; i++)
             {
-                this.id = p;
+                osszeg = osszeg + penzfajtak[i];
+            }
+            if (this.penz > 1 && this.penz < 200000)
+            {
+                Math.Round((decimal)(20000), MidpointRounding.AwayFromZero);
             }
 
-            // Eredmények átadó metódusok
-            public string getPenzerme()
-            {
-                return 
-            }
-            public void szamitasa()
-            {
-                // Kerekités számítás
-                setPenz();
-            }
-
-            private void setPenz()
-            {
-                if ( this.penz > 1 && this.penz < 200000)
-                {
-
-                    Math.round();
-                }
-                
-            }
         }
     }
-}
-
