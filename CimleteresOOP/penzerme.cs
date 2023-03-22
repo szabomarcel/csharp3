@@ -13,14 +13,15 @@ namespace CimleteresOOP
     internal class penzerme
     {
         // Osztályváltozók
-        private int penz;
+        private int penzes;
         public static string[] penzfajtak = [20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
         private int penzermek = 0;
 
+        public penzerme() { }
         //Konstruktor
-        public (int p)
+        public (int penzes)
         {
-            this.penz = p;
+            this.penz = penz;
         }    
 
         // Eredmények átadó metódusok
@@ -38,7 +39,12 @@ namespace CimleteresOOP
             int osszeg = 0;
             for (int i = 0; i < osszeg.Length; i++)
             {
-                osszeg = osszeg + penzfajtak[i];
+               while(penzermek > 0)
+            {
+                int mennyiseg = this.GetPenzerme / this.GetPenzerme(penzes);
+                penzermek = penzermek % this.GetPenzerme(penzes);
+                penzes++;
+            }
             }
             if (this.penz > 1 && this.penz < 200000)
             {
