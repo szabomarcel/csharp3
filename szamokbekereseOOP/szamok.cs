@@ -33,14 +33,14 @@ namespace szamokbekereseOOP
         {
             for (int i = 0; i < hossz; i++)
             {
-                osszeg = osszeg + Convert.ToInt16(n[i]) - 48;
+                this.osszeg = this.osszeg + Convert.ToInt16(n[i]) - 48;
             }
-            if (osszeg % 3 == 0) ;
-            if (osszeg % 9 == 0) ;
-            if (hossz > 1)
-                if (hossz > 1)
+            if (this.osszeg % 3 == 0) ;
+            if (this.osszeg % 9 == 0) ;
+            if (this.hossz > 1)
+                if (this.hossz > 1)
                 {
-                    if ((Convert.ToInt16(n[hossz - 2] - 48) * 10 + Convert.ToInt16(n[hossz - 1]) - 48) % 4 == 0) ;
+                    if ((Convert.ToInt16(n[this.hossz - 2] - 48) * 10 + Convert.ToInt16(n[this.hossz - 1]) - 48) % 4 == 0) ;
                     else if ((Convert.ToInt16(n[0]) - 48) % 4 == 0) ;
                 }
         }
