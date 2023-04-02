@@ -10,6 +10,11 @@ namespace EgerekOOP
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Írd be az első pontot:");
+            Console.Write(Console.ReadLine());
+            Console.WriteLine("Írd be a második pontot:");
+            Console.Write(Console.ReadLine());
+            Console.ReadKey();
         }
     }
 }

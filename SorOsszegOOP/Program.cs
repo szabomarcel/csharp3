@@ -10,6 +10,11 @@ namespace SorOsszegOOP
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Kérek egy számot");          
+            Console.WriteLine("Add neg a k pozítiv számot:");
+            Console.WriteLine("Összeg: {0}");
+            Console.WriteLine("A számjegyek osszege: {0}.");
+            Console.ReadLine();
         }
     }
 }

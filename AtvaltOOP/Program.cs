@@ -10,6 +10,9 @@ namespace AtvaltOOP
     {
         static void Main(string[] args)
         {
+            Console.Write("Bitsorozat : ");
+            Console.WriteLine("Az átváltás eredménye : {0}");
+            Console.ReadKey();
         }
     }
 }
