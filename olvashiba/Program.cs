@@ -26,7 +26,6 @@ namespace olvashiba
                 Console.WriteLine("A beírt szam: {0} ", szam);
             }
         }
-
         static void Main(string[] args)
         {
             Program hibakezel = new Program();
