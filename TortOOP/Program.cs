@@ -16,14 +16,14 @@ namespace TortOOP
             tort.y = 0;
             tort.x = 0;
 
-            Console.WriteLine("A tört számláló:");
+            Console.WriteLine("A tört számláló:", tort.a);
             Console.Write(Console.ReadLine());
-            Console.WriteLine("A tört nevező:");
+            Console.WriteLine("A tört nevező:", tort.b);
             Console.Write(Console.ReadLine());
             Console.WriteLine();
-            Console.WriteLine("Az egyszerűsített tört számlálója: ");
+            Console.WriteLine("Az egyszerűsített tört számlálója: ", tort.y);
             Console.Write(Console.ReadLine());
-            Console.WriteLine("Az egyszerűsített tört nevezője: ");
+            Console.WriteLine("Az egyszerűsített tört nevezője: ", tort.x);
             Console.Write(Console.ReadLine());
             Console.ReadLine();
         }

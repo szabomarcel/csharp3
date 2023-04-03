@@ -16,9 +16,9 @@ namespace EgerekOOP
             eger.T = 0;
             eger.U = 0;
 
-            Console.WriteLine("Írd be az első pontot:");
+            Console.WriteLine("Írd be az első pontot:", eger.L);
             Console.Write(Console.ReadLine());
-            Console.WriteLine("Írd be a második pontot:");
+            Console.WriteLine("Írd be a második pontot:", eger.V);
             Console.Write(Console.ReadLine());
             Console.ReadKey();
         }

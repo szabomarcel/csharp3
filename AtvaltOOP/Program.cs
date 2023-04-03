@@ -14,7 +14,7 @@ namespace AtvaltOOP
             atvalt.bitsor = 0;
             atvalt.osszeg = 0;
             atvalt.hatvany = 2;
-            Console.Write("Bitsorozat : ");
+            Console.Write("Bitsorozat : ", atvalt.bitsor);
             Console.WriteLine("Az átváltás eredménye : {0}");
             Console.ReadKey();
         }
