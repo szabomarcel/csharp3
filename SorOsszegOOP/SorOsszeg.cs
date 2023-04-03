@@ -9,10 +9,10 @@ namespace SorOsszegOOP
     internal class SorOsszeg
     {
         // Konstruktor
-        public int s = 0; // s érték tárolás
-        public int k = 0; // k érték tárolás
-        public string szam; // Szám tárolás
-        public int osszeg = 0; // Összeg tárolás
+        public int s = 0; //s érték tárolás
+        public int k = 0; //k érték tárolás
+        public string szam; //Szám tárolás
+        public int osszeg = 0; //Összeg tárolás
 
         public SorOsszeg() { }
         public SorOsszeg(int s, int k, int szam, int osszeg) // A sorosszeg egyenlőek önmagukkal

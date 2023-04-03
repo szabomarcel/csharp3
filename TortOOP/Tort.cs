@@ -9,10 +9,10 @@ namespace TortOOP
     internal class Tort
     {
         // Konstruktor
-        public int a = 0; // Az a oldal = 0-val
-        public int x; // X érék tárolás
-        public int b = 0; // Az b oldal = 0-val
-        public int y; // Y érték tárolás
+        public int a = 0; //Az a oldal = 0-val
+        public int x; //X érék tárolás
+        public int b = 0; //Az b oldal = 0-val
+        public int y; //Y érték tárolás
 
         public int A { get { return a; } set { a = value; } }
         public int B { get { return b; } set { b = value; } }
