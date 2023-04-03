@@ -10,6 +10,10 @@ namespace AtvaltOOP
     {
         static void Main(string[] args)
         {
+            Atvalt atvalt = new Atvalt();
+            atvalt.bitsor = 0;
+            atvalt.osszeg = 0;
+            atvalt.hatvany = 2;
             Console.Write("Bitsorozat : ");
             Console.WriteLine("Az átváltás eredménye : {0}");
             Console.ReadKey();

@@ -10,6 +10,12 @@ namespace EgerekOOP
     {
         static void Main(string[] args)
         {
+            Egerek eger = new Egerek();
+            eger.L = 0;
+            eger.V = 0;
+            eger.T = 0;
+            eger.U = 0;
+
             Console.WriteLine("Írd be az első pontot:");
             Console.Write(Console.ReadLine());
             Console.WriteLine("Írd be a második pontot:");

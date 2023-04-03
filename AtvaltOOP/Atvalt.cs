@@ -9,9 +9,9 @@ namespace AtvaltOOP
     internal class Atvalt
     {
         // Osztályváltozók
-        private int bitsor = 0;
-        private double osszeg = 0;
-        private double hatvany = 2;
+        public int bitsor = 0;
+        public double osszeg = 0;
+        public double hatvany = 2;
 
         // Konstructor
         private Atvalt() { }

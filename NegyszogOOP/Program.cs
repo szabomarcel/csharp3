@@ -13,6 +13,11 @@ namespace NegyszogOOP
     {
         static void Main(string[] args)
         {
+            Negyszog negyszog = new Negyszog();
+            negyszog.i = 0;
+            negyszog.y = 0;
+            negyszog.x = 0;
+            negyszog.ran = 0;
             Console.ReadKey();
         }
     }

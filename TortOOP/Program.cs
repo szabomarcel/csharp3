@@ -10,6 +10,12 @@ namespace TortOOP
     {
         static void Main(string[] args)
         {
+            Tort tort = new Tort();
+            tort.a = 0;
+            tort.b = 0;
+            tort.y = 0;
+            tort.x = 0;
+
             Console.WriteLine("A tört számláló:");
             Console.Write(Console.ReadLine());
             Console.WriteLine("A tört nevező:");

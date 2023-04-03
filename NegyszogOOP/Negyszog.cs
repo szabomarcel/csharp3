@@ -10,9 +10,9 @@ namespace NegyszogOOP
     internal class Negyszog
     {
         // Konstruktor
-        private int i = 0, x = 0, y = 0;
+        public int i = 0, x = 0, y = 0;
         Random rnd = new Random();
-        private int ran;
+        public int ran;
 
         public Negyszog() { }
         public Negyszog(int i, int x, int y, int ran) 
