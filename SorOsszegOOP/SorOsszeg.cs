@@ -9,10 +9,10 @@ namespace SorOsszegOOP
     internal class SorOsszeg
     {
         // Konstruktor
-        public int s = 0;
-        public int k = 0;
-        public string szam;
-        public int osszeg = 0;
+        public int s = 0; // s érték tárolás
+        public int k = 0; // k érték tárolás
+        public string szam; // Szám tárolás
+        public int osszeg = 0; // Összeg tárolás
 
         public SorOsszeg() { }
         public SorOsszeg(int s, int k, int szam, int osszeg) // A sorosszeg egyenlőek önmagukkal
@@ -21,11 +21,9 @@ namespace SorOsszegOOP
             this.k = k;
             this.osszeg = osszeg;
         }
+        // "N" beállitás
         public int S { get { return s; } }
         public int K { get { return k; } }
-
-        // "N" beállitás
-
 
         // Eredmény meghatározása
         public void szamitas() // Meghatározuk az eredmény számát

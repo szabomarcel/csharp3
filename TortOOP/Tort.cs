@@ -10,9 +10,9 @@ namespace TortOOP
     {
         // Konstruktor
         public int a = 0; // Az a oldal = 0-val
-        public int x;
+        public int x; // X érék tárolás
         public int b = 0; // Az b oldal = 0-val
-        public int y;
+        public int y; // Y érték tárolás
 
         public int A { get { return a; } set { a = value; } }
         public int B { get { return b; } set { b = value; } }
@@ -23,6 +23,8 @@ namespace TortOOP
             this.x = a;
             this.y = a;
             this.b = b;
+            this.y = y;
+            this.x = x;
         }
 
         // Számláló beállitása
