@@ -1,17 +1,14 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Diagnostics.SymbolStore;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileIO
+namespace helysegMgyrrszg
 {
-    internal class FileInOut
+    internal class megyek
     {
         // Osztályváltozók
         private string fileName;
@@ -21,7 +18,7 @@ namespace FileIO
         private StreamReader sr;
 
         // Konstructor
-        public FileInOut()
+        public megyek()
         {
             setFilename(); // Fájl nevének bekérése
             setFileMode(); // MEgnyitás módjának bekérése
@@ -31,7 +28,8 @@ namespace FileIO
         private void setFilename()
         {
             Console.WriteLine("Adja meg a fájl nevét kiterjesztés nélkül: ");
-            this.fileName = /* "..\\..\\" + */ Console.ReadLine() + "text";
+            this.fileName = /* "..\\..\\" + */
+            Console.ReadLine() + "text";
         }
         private void setFileMode()
         {
@@ -87,53 +85,20 @@ namespace FileIO
                         Console.WriteLine("Hibás adat! Ismételje meg!");
                         ismet = true; break;
                 }
-            } while (ismet);
+            } while (ismet);   
         }
-        /*
-        string winDir = System.Environment.GetEnvironmentVariable("windir");
-        public FileInOut(string fileName, FileMode fileMode, FileAccess fileAccess, FileStream fs, StreamReader sr, string winDir)
-        {
-            this.fileName = fileName;
-            this.fileMode = fileMode;
-            this.fileAccess = fileAccess;
-            this.fs = fs;
-            this.sr = sr;
-            this.winDir = winDir;
-        }
-        public void enter(object sender, System.EventArgs e)
-        {
-            this.listBox1.Items.Clear();
-            StreamReader reader = new StreamReader(winDir + "\\system.ini");
-            try
-            {
-                do
-                {
-                    addListItem(reader.ReadLine());
-                }
-                while (reader.Peek() != -1);
-            }
-            catch
-            {
-                addListItem("File is empty");
-            }
-            finally
-            {
-                reader.Close();
-            }
-        }
-        */
         public FileStream getFile()
         {
             return new FileStream(this.fileName, this.fileMode, this.fileAccess);
         }
         /*
-        public StreamReader getFile2()
-        {
-            this.fs = new FileStream(this.fileName, this.fileMode, this.fileAccess);
-            this.sr = new StreamReader(fs);
-            return sr;
-        }
-        */
+       public StreamReader getFile2()
+       {
+           this.fs = new FileStream(this.fileName, this.fileMode, this.fileAccess);
+           this.sr = new StreamReader(fs);
+           return sr;
+       }
+       */
         public void closeFile()
         {
             if (this.sr != null) { this.sr.Close(); }

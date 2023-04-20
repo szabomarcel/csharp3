@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
-namespace FileIO
+namespace helysegMgyrrszg
 {
     internal class Program
     {
@@ -22,62 +23,19 @@ namespace FileIO
                 string s = sr.ReadToEnd();
                 Console.WriteLine(s);
                 Console.WriteLine(); // Emelünk egy üres sort
-
             }
         }
-
         #endregion Egész fálj olvasása
+
         static void Main(string[] args)
         {
-            FileInOut f = new FileInOut();
+            helysegMgyrrszg f = new helysegMgyrrszg();
             fileReadFull(f.getFile());
             fileReadLine(f.getFile());
             string[] s = { "C# Label Control", "C# Button Control", "C# TextBox Control", "C# ComboBox", "C# ListBox Control", "C# Checked ListBox Control", "C# CheckBox Control", "C# PictureBox Control", "C# ProgressBar Control", "C# ScrollBars Control", "C# DateTimePicker Control", "C# Treeview Control", "C# ListView Control", "C# Menu Control", "C# MDI Form", "C# Color Dialog Box", "C# Font Dialog Box", "C# OpenFile Dialog Box", "C# Print Dialog Box" };
             fileWrite(f.getFile(), s);
-            /*
-            FileInOut f = new FileInOut();
-            using (StreamReader sr = f.getFile())
-            {
-                // Dolgozzunk a fájllal
-                // Egészet kiolvassa
-
-                Console.WriteLine("Egyserre olvassa a fájlt!");
-
-                string s = sr.ReadToEnd();
-                Console.WriteLine(s);
-                Console.WriteLine(); // Emelünk egy üres sort
-
-                Console.WriteLine("Soronként olvass a fájlt!");
-
-                // Soronként olvas
-                while (!sr.EndOfStream) // s != null
-                {
-                    string s2 = sr.ReadLine();
-                    Console.WriteLine(s2);
-                }
-            }
-            f.closeFile();
-
-            using (StreamReader sr = f.getFile())
-            {
-                // Dolgozzunk a fájllal
-                //Egészet kiolvassa
-
-                Console.WriteLine("Soronként olvass a fájlt!");
-
-                // Soronként olvas
-                while (!sr.EndOfStream) // s != null
-                {
-                    string s = sr.ReadLine();
-                    Console.WriteLine(s);
-                }
-            }
-            f.closeFile();*/
             Console.ReadKey();
-
         }
-
-
         #region Soronlénti olvasás
         private static void fileReadLine(FileStream file)
         {
@@ -94,7 +52,7 @@ namespace FileIO
             }
         }
         #endregion Soronlénti olvasás
-        
+
         #region File írás
         private static void fileWrite(FileStream file, string[] s)
         {
@@ -111,6 +69,5 @@ namespace FileIO
             }
         }
         #endregion File írás
-
     }
 }
