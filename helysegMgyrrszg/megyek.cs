@@ -28,8 +28,7 @@ namespace helysegMgyrrszg
         private void setFilename()
         {
             Console.WriteLine("Adja meg a fájl nevét kiterjesztés nélkül: ");
-            this.fileName = /* "..\\..\\" + */
-            Console.ReadLine() + "text";
+            this.fileName = /* "..\\..\\" + */ "C:\\Users\\szabo.marcell\\source\\repos\\csharp4\\helysegMgyrrszg " + "Magyarország helységtáblázat.csv";
         }
         private void setFileMode()
         {
@@ -103,6 +102,16 @@ namespace helysegMgyrrszg
         {
             if (this.sr != null) { this.sr.Close(); }
             if (this.fs != null) { this.fs.Close(); }
+        }
+        public void kiirat()
+        {
+            string sBeolvasott = "";
+            using (StreamWriter Kiir = new StreamWriter("output.txt", false, Encoding.UTF8))
+            {
+                sBeolvasott = helysegMgyrrszg.ReadToEnd();
+                Console.Write(sBeolvasott);
+                Kiir.Write(sBeolvasott);
+            }
         }
     }
 }
