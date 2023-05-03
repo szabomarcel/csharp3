@@ -25,7 +25,7 @@ namespace NegyszogOOP
         // Konzolra íratás
         public void kiiratas()
         {
-            while (x < 79)
+            while (x < 79) // Elöl tesztesztelés, hogy eldönti, hogy mennyi legyen a ran értéke.
             {
                 i = 0;
                 ran = rnd.Next(2, 10);

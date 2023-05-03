@@ -26,7 +26,7 @@ namespace SorOsszegOOP
         public int K { get { return k; } }
 
         // Eredmény meghatározása
-        public void szamitas() // Meghatározuk az eredmény számát
+        public void szamitas() // Meghatározuk az eredmény számát for ciklussal
         {
             for (int i = 0; i <= k; i++)
             {
@@ -36,7 +36,7 @@ namespace SorOsszegOOP
         }
 
         // Eredmény lekérése
-        public void eredmeny() // Lekérjük a szám eredményét
+        public void eredmeny() // Lekérjük a szám eredményét és elkészítme for ciklussal.
         {
             for (int i = 0; i < szam.Length; i++)
             {

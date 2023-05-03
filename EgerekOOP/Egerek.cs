@@ -8,10 +8,10 @@ namespace EgerekOOP
 {
     internal class Egerek
     {
-        public int L; //Az L tárolása
-        public int U; //Az U tárolása
-        public int V; //Az V tárolása
-        public int T; //Az T tárolása
+        public int L; //Az L tárolása/bekérése
+        public int U; //Az U tárolása/bekérése
+        public int V; //Az V tárolása/bekérése
+        public int T; //Az T tárolása/bekérése
 
         // Konstruktor
         public Egerek() { }

@@ -28,7 +28,7 @@ namespace TortOOP
         }
 
         // Számláló beállitása
-        public void szamlalo() // Tört számolása
+        public void szamlalo() // Tört számolása/kiszámitása
         {
             Console.WriteLine("A tört számláló:");
             int a = int.Parse(Console.ReadLine());
@@ -45,7 +45,7 @@ namespace TortOOP
         // Tört meghatározása
         public void tort() // Tört számolás
         {
-            while (a != 0 && b != 0)
+            while (a != 0 && b != 0) // elöl tesztelés ha a meg a b nem egyenlő a 0-val akkor ha függvényt készítünk
             {
                 if (a > b)
                 {

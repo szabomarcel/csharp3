@@ -19,8 +19,6 @@ namespace MatrixOOP
             this.oszlop = ostlop;   
         }
         // Matrix elemeinek beállitása
-
-
         // Matrix kiírása a konzolra
         private static void MatrixKiirat(int[,] kiirando_matrix)
         {
@@ -33,13 +31,8 @@ namespace MatrixOOP
                 Console.WriteLine();
             }
         }
-
         // Determináns meghatározásas
-
-
         // Determináns lekérése // Bal felső sarokból átlósan kiszámolni a jobb sarok átlójával.
-
-
         // Függvényként való hasznát
         static int[,] RandomMatrixLetrehoz(int sor, int oszlop)
         {
