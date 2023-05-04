@@ -36,8 +36,8 @@ namespace Halmazok
             var set1 = new HashSet<int>(new int[] {});
             var set2 = new HashSet<int>(new int[] {});
 
-            set2.Add();
-            set2.Add();
+            set2.Add(1);
+            set2.Add(1000);
 
             Console.WriteLine("set1:");
             Kiir(set1);
