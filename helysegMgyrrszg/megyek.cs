@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -108,7 +109,7 @@ namespace helysegMgyrrszg
             string sBeolvasott = "";
             using (StreamWriter Kiir = new StreamWriter("output.txt", false, Encoding.UTF8))
             {
-                sBeolvasott = helysegMgyrrszg.ReadToEnd();
+                sBeolvasott = @"C:\Users\Lenovo\Source\Repos\csharp\helysegMgyrrszg\Magyarország helységtáblázat";
                 Console.Write(sBeolvasott);
                 Kiir.Write(sBeolvasott);
             }
