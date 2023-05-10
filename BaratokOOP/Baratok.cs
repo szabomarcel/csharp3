@@ -16,6 +16,7 @@ namespace BaratokOOP
             public string nev;
             public int eletkor;
         }
+
         //  Adatok beolvasása fájlból vagy generálása a programban, majd elhelyezése listában.
         StreamWriter f = new StreamWriter(@"C:\Users\Lenovo\Source\Repos\csharp\BaratokOOP\bin\Debug\fajlnev");
         List<int> list = new List<int>();
