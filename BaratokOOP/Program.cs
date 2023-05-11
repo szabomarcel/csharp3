@@ -18,13 +18,13 @@ namespace BaratokOOP
                 Console.Write(NEVEK[i] + ", ");
             }
             // Insert
-            NEVEK.Insert(2, "Új fiú");
+            // NEVEK.Insert(2, "Új fiú");
 
             // Remove
-            NEVEK.Remove(@"C:\Users\Lenovo\Source\Repos\csharp\BaratokOOP\bin\Debug\fajlnev");
-            NEVEK.RemoveAt(1);
+            // NEVEK.Remove(@"C:\Users\Lenovo\Source\Repos\csharp\BaratokOOP\bin\Debug\fajlnev");
+            // NEVEK.RemoveAt(1);
             // Clear
-            NEVEK.Clear();
+            // NEVEK.Clear();
 
 
             /*
@@ -43,6 +43,22 @@ namespace BaratokOOP
             }
             g.Close();*/
             //Console.WriteLine("Csoport atlageletkotra: {0}", atl / sz);
+            Baratok a = new Baratok();
+            string fnev;
+            Console.Write("Allomany neve utvonallal egyutt:");
+            fnev = "fajlnev.csv";
+            StreamReader f = File.OpenText(@"C:\Users\Lenovo\Source\Repos\csharp\BaratokOOP\bin\Debug\fajlnev");
+            while (f.Peek() != -1)
+            {
+                Console.WriteLine(f.ReadLine());
+
+            }
+            f.Close();
+            StreamReader g = File.OpenText(@"C:\Users\Lenovo\Source\Repos\csharp\BaratokOOP\bin\Debug\fajlnev");
+            while (g.Peek() != -1)
+            {
+                Console.WriteLine(g.ReadLine());
+            }
             Console.ReadKey();
         }
     }

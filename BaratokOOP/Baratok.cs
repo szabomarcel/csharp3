@@ -97,7 +97,7 @@ namespace BaratokOOP
 
 
         // Lista kiíratása fájlba.A fájl neve: baratok.csv
-
+        
 
         // 1.-B Barátok osztály bővítése
         // Táblázatba kiíratja a szülő osztályt + bővítés
