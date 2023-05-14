@@ -26,7 +26,6 @@ namespace BaratokOOP
             // Clear
             // NEVEK.Clear();
 
-
             /*
             Baratok a = new Baratok();
             StreamWriter f = new StreamWriter(@"feladat2.text");
