@@ -58,7 +58,30 @@ namespace BaratokOOP
             {
                 Console.WriteLine(g.ReadLine());
             }
+
             Console.ReadKey();
+        }
+        private static void lista() // Lista kiíratása
+        {
+            int l = (kepernyo.listazas(Console.OpenStandardInput(l));
+            Console.WriteLine(l);
+        }
+
+        private static void eldontendo() // Eldöntendő hogy mehet-e bulizni vagy sem.
+        {
+            int b;
+            if (Buli.bulizas(Console.OpenStandardOutput(b)))
+            {
+                Console.WriteLine("Mehet bulizni.");
+            }
+            else
+            {
+                Console.WriteLine("Nem mehet ulizni. Nem érte el az éltkort");
+            }
+        }
+        private static void latpozasGorgetes(int lg) // Lapozás és görgetés 
+        {
+
         }
     }
 }
