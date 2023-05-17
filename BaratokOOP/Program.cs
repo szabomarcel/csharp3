@@ -65,7 +65,7 @@ namespace BaratokOOP
         {
             int l = (kepernyo.listazas(Console.OpenStandardInput(l));
             Console.WriteLine(l);
-        }
+        } 
 
         private static void eldontendo() // Eldöntendő hogy mehet-e bulizni vagy sem.
         {
