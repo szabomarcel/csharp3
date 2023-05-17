@@ -17,9 +17,8 @@ namespace BaratOOP
             barat = new Barat();
             string[] t = { "teszt aranka", "1991.11.12", "N", "4" };
             barat.beolvas();
-            barat.bulizas();
             vizsga(t[0]);
-            
+
             /*
             barat.kereses(t[0]);
             vizsgalat(t[0]);
@@ -45,17 +44,17 @@ namespace BaratOOP
                 Console.WriteLine("Nincs ilyen barátunk.");
             }
         }
-        
-        private static void lista(string l)
+
+        private static void lista() // Lista kiíratása
         {
-            bool l = kepernyo.listazas;
-            Console.WriteLine(barat.listazas);
+            int l = (kepernyo.listazas(Console.OpenStandardInput(l));
+            Console.WriteLine(l);
         }
-        
-        private static void eldontendo(byte b)
+
+        private static void eldontendo() // Eldöntendő hogy mehet-e bulizni vagy sem.
         {
-           
-            if (Buli.bulizas(b))
+            int b;
+            if (Buli.bulizas(Console.OpenStandardOutput(b)))
             {
                 Console.WriteLine("Mehet bulizni.");
             }
@@ -63,6 +62,10 @@ namespace BaratOOP
             {
                 Console.WriteLine("Nem mehet ulizni. Nem érte el az éltkort");
             }
+        }
+        private static void latpozasGorgetes(int lg) // Lapozás és görgetés 
+        {
+
         }
     }
 }
