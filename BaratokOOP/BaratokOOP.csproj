@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Baratok.cs" />
+    <Compile Include="BaratokBuli.cs" />
+    <Compile Include="BaratokPage.cs" />
+    <Compile Include="BaratokScreen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
