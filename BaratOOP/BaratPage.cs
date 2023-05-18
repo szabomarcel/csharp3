@@ -6,26 +6,55 @@ using System.Threading.Tasks;
 
 namespace BaratOOP
 {
-    struct Page
+
+    internal class BaratPage : Barat
     {
-        public string Name; // Szöveges név változó
-        public DateTime szulido; // Dátum változó DateTime-ban
-        public char nem; // Nem változó char-ban
-        public int hajlam;  // Hajlam int-be
-    }
-    internal class BaratPage
-    {
-        
-        public static void ZoomIn(object sender, EventArgs e)
+        #region Kontructor
+        public BaratPage() { } // Meghívja az őskontructort
+        #endregion Kontructor
+        #region Page
+        public void Page()
         {
-            if (e.Up > 0)
+            int lapmeret = 15;
+            ConsoleKeyInfo p;
+            int i = 0, j = 0;
+            bool kilepes = false;
+
+            do
             {
-                // A felhasználó felfelé görgetett.
-            }
-            else if (e.Down < 0)
-            {
-                // A felhasználó lefelé görgetett.
-            }
+                Console.Clear();
+                for (j = i; j < this.list.Count && j < lapmeret; j++)
+                {
+                    Console.WriteLine($"{this.list[j].Name,-20}; " +
+                        $"{this.list[j].szulido.ToShortDateString(),10}; " +
+                        $"{this.list[j].hajlam,1};  " +
+                        $"{this.list[j].nem,1}"); // Erre az objectumra hivatkozom
+                }
+                p = Console.ReadKey();
+                
+                switch (p.Key)
+                {
+                    case ConsoleKey.PageUp: // PageUp
+                        i = (j >= lapmeret) ? j - lapmeret : 0;
+                        break;
+                    case ConsoleKey.PageDown: // PageDown
+                        i = j;
+                        break;
+                    case ConsoleKey.Home: // Home
+                        i = 0;
+                        break;
+                    case ConsoleKey.End: // End
+                        i = this.list.Count - lapmeret;
+                        break;
+                    case ConsoleKey.Escape: // ESC                    
+                        kilepes = true;
+                        break;
+                    default:
+                        Console.WriteLine("Csak a következő billentyűket használhatod: PageUp, PageDown, Home, End és ESC");
+                        break;
+                }
+            } while (!kilepes);
         }
+        #endregion Page
     }
 }

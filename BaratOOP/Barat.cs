@@ -20,7 +20,7 @@ namespace BaratOOP
         private static string path = "..\\..\\"; // link deklarálásra vonatkozik ami lehet 4 byte is
         private static string intfile = "teszt.csv"; // link deklarálásra vonatkozik ami lehet 4 byte is
         private static string outfile = "barat.csv"; // link deklarálásra vonatkozik ami lehet 4 byte is
-        private List<Szemely> list = new List<Szemely>();
+        protected List<Szemely> list = new List<Szemely>();
         #region Konstructor
         public Barat() { }
         #endregion Konstructor

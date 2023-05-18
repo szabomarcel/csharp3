@@ -10,10 +10,12 @@ namespace BaratOOP
     internal class Program
     {
         private static Barat barat;
-        private static BaratScreen kepernyo;
+        private static BaratScreen barat1;
+        private static BaratPage barat2;
         private static BaratBuli Buli;
         static void Main(string[] args) // Statikus Main
         {
+            /*
             barat = new Barat();
             string[] t = { "teszt aranka", "1991.11.12", "N", "4" };
             barat.beolvas();
@@ -22,13 +24,21 @@ namespace BaratOOP
             /*
             barat.kereses(t[0]);
             vizsgalat(t[0]);
-            */
+            
 
             barat.insertBarat(t);
             vizsga(t[0]);
 
             barat.delete(t[0]);
             vizsga(t[0]);
+
+            barat1 = new BaratScreen();
+            barat1.beolvas(); // Ős metódus és használjuk
+            barat1.listazas();
+            */
+            barat2 = new BaratPage();
+            barat2.beolvas();
+            barat2.Page();
 
             Console.ReadKey();
         }
@@ -43,29 +53,6 @@ namespace BaratOOP
             {
                 Console.WriteLine("Nincs ilyen barátunk.");
             }
-        }
-
-        private static void lista() // Lista kiíratása
-        {
-            int l = (kepernyo.listazas(Console.OpenStandardInput(l));
-            Console.WriteLine(l);
-        }
-
-        private static void eldontendo() // Eldöntendő hogy mehet-e bulizni vagy sem.
-        {
-            int b;
-            if (Buli.bulizas(Console.OpenStandardOutput(b)))
-            {
-                Console.WriteLine("Mehet bulizni.");
-            }
-            else
-            {
-                Console.WriteLine("Nem mehet ulizni. Nem érte el az éltkort");
-            }
-        }
-        private static void latpozasGorgetes(int lg) // Lapozás és görgetés 
-        {
-
         }
     }
 }

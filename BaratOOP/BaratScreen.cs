@@ -14,23 +14,22 @@ namespace BaratOOP
         public char nem; // Nem változó char-ban
         public int hajlam;  // Hajlam int-be
     }
-    internal class BaratScreen
+    internal class BaratScreen : Barat
     {
         #region Konstructor
-        public BaratScreen() { }
+        public BaratScreen() { } // Meghívja az őskontructort
         #endregion Konstructor
 
         #region Képernyőre listázás
         public void listazas()
-        {
-            StreamReader olvas = new StreamReader(@"C:\\Users\\Lenovo\\Source\\Repos\\csharp\\BaratOOP\\teszt.csv");
-            string szoveg;
-            while (!olvas.EndOfStream)
+        {            
+            foreach (var item in this.list)
             {
-                szoveg = olvas.ReadLine();
-                Console.WriteLine(szoveg);
+                Console.WriteLine($"{item.Name, -20}; " +
+                    $"{item.szulido.ToShortDateString(), 10}; " +
+                    $"{item.hajlam, 1};  " +
+                    $"{item.nem, 1}");                
             }
-            olvas.Close();
         }
         #endregion Képernyőre listázás
     }
