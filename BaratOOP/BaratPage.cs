@@ -15,6 +15,7 @@ namespace BaratOOP
         #region Page
         public void Page()
         {
+            /*
             Console.WriteLine("Nyom meg egy gombot.");
             ConsoleKeyInfo k = Console.ReadKey();
             Console.WriteLine("\n");
@@ -23,6 +24,7 @@ namespace BaratOOP
                 Console.WriteLine("");
             }
             Console.ReadKey();
+            */
             int lapmeret = 15;
             ConsoleKeyInfo p;
             int i = 0, j = 0;
