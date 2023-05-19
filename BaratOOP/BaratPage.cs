@@ -25,6 +25,7 @@ namespace BaratOOP
             }
             Console.ReadKey();
             */
+
             int lapmeret = 15;
             ConsoleKeyInfo p;
             int i = 0, j = 0;

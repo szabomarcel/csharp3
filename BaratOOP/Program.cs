@@ -12,7 +12,7 @@ namespace BaratOOP
         private static Barat barat;
         private static BaratScreen barat1;
         private static BaratPage barat2;
-        private static BaratBuli Buli;
+        private static BaratBuli barat3;
         static void Main(string[] args) // Statikus Main
         {
             /*
@@ -39,6 +39,10 @@ namespace BaratOOP
             barat2 = new BaratPage();
             barat2.beolvas();
             barat2.Page();
+
+            barat3 = new BaratBuli();
+            barat3.beolvas();
+            barat3.bulizas();
 
             Console.ReadKey();
         }
