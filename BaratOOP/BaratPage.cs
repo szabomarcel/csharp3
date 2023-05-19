@@ -16,7 +16,7 @@ namespace BaratOOP
         public void Page()
         {
             /*
-            Console.WriteLine("Nyom meg egy gombot.");
+            Console.WriteLine("Nyomd meg egy gombot.");
             ConsoleKeyInfo k = Console.ReadKey();
             Console.WriteLine("\n");
             if (k.Key == ConsoleKey.Home)
