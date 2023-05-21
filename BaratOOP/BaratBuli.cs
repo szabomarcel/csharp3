@@ -25,6 +25,14 @@ namespace BaratOOP
                 Console.WriteLine("Írd be a hajlami szintedett: ");
                 if (i.hajlam >= 5 && i.szulido.Year <= koraiEv)
                     ev.Add(i);
+                else if (i.hajlam <= 5 && i.szulido.Year <= a)
+                {
+                    Console.WriteLine("Nem alkalmas a bulizásra.");
+                }
+                else
+                {
+                    Console.WriteLine("Tilos a bulizás.");
+                }
             }
             Console.ReadLine();
         }
