@@ -15,8 +15,8 @@ namespace BaratOOP
         public void bulizas()
         {
             Console.WriteLine("Kérem adja meg az életkorát: ");
+            List<Barat> ev = new List<Barat>();
             int koraiEv = DateTime.Now.Year - 20;
-            List<Barat> ret = new List<Barat>();
             int E = int.Parse(Console.ReadLine());
             int a = 0;
             DateTime d = DateTime.Now;
@@ -24,7 +24,7 @@ namespace BaratOOP
             {
                 Console.WriteLine("Írd be a hajlami szintedett: ");
                 if (i.hajlam >= 5 && i.szulido.Year <= koraiEv)
-                    ret.Add(i);
+                    ev.Add(i);
             }
             Console.ReadLine();
         }
