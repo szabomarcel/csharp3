@@ -17,50 +17,35 @@ namespace dolgozatOOP
         private static auto abroncsok;
         private static auto ajtoszam;
         private static auto ulohely;
+        private static auto kinezetek;
         static void Main(string[] args) // Statikus Main
         {
             Namecar = new auto();
-            Namecar.autonev();
-            kereses(uj[0]);
+            autonev();
 
             rendszam = new auto();
-            rendszam.rendszam();
-            kereses(uj[0]);
+            rendszam();
 
             gyartasiev = new auto();
-            gyartasiev.gyartas();
-            kereses(uj[0]);
+            gyartas();
 
             uzemanyag = new auto();
-            uzemanyag.uzemAnyag();
-            kereses(uj[0]);
+            uzemAnyag();
 
             szin = new auto();
-            szin.szin();
-            kereses(uj[0]);
+            szin();
 
             abroncsok = new auto();
-            abroncsok.abroncsmeret();
-            kereses(uj[0]);
+            abroncsmeret();
 
             ajtoszam = new auto();
-            ajtoszam.ajtokszama();
-            kereses(uj[0]);
+            ajtokszama();
 
             ulohely = new auto();
-            ulohely.ajtokszama();
-            kereses(uj[0]);
-        }
-        private static void kereses(string uj) // Visszatérési érték
-        {
-            if (Namecar.autonev(uj))
-            {
-                Console.WriteLine("Léteszik ilyen autó.");
-            }
-            else
-            {
-                Console.WriteLine("Még nincs ilyen autó.");
-            }
-        }
+            ajtokszama();
+
+            kinezetek = new auto();
+            kinezetek();
+        }        
     }
 }
