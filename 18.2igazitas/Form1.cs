@@ -6,7 +6,7 @@ namespace _18._2igazitas
         {
             InitializeComponent();
         }
-       
+
         private void label1_MouseClick(object sender, MouseEventArgs e)
         {
             int n = e.X / (btnIgazitas.Width / 3);
@@ -24,6 +24,5 @@ namespace _18._2igazitas
                 case 8: btnIgazitas.TextAlign = ContentAlignment.BottomRight; break;
             }
         }
-    }
     }
 }
