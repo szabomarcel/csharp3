@@ -1,6 +1,6 @@
 ﻿namespace _18._3Koordinata
 {
-    partial class Frm_Holmozog
+    partial class Koordinata
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,35 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Holmozog = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
-            // 
-            // Holmozog
-            // 
-            this.Holmozog.BackColor = System.Drawing.Color.Lime;
-            this.Holmozog.Location = new System.Drawing.Point(195, 99);
-            this.Holmozog.Name = "Holmozog";
-            this.Holmozog.Size = new System.Drawing.Size(200, 106);
-            this.Holmozog.TabIndex = 0;
+            Frm_Holmozog = new Panel();
+            SuspendLayout();
             // 
             // Frm_Holmozog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Holmozog);
-            this.Name = "Frm_Holmozog";
-            this.Text = "Koordinátái X:90, Y:68 ";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelIgazit_MouseMove);
-            this.Resize += new System.EventHandler(this.PanelIgazit_Resize);
-            this.ResumeLayout(false);
-
+            Frm_Holmozog.BackColor = Color.ForestGreen;
+            Frm_Holmozog.Location = new Point(277, 115);
+            Frm_Holmozog.Name = "Frm_Holmozog";
+            Frm_Holmozog.Size = new Size(212, 172);
+            Frm_Holmozog.TabIndex = 0;
+            Frm_Holmozog.MouseMove += Frm_Holmozog_MouseMove;
+            Frm_Holmozog.Resize += Frm_Holmozog_Resize;
+            // 
+            // Koordinata
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Frm_Holmozog);
+            Name = "Koordinata";
+            Text = "Koordinata";
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel Holmozog;
+        private Panel Frm_Holmozog;
     }
 }

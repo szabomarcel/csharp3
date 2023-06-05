@@ -1,25 +1,29 @@
 namespace _18._3Koordinata
 {
-    public partial class Frm_Holmozog : Form
+    public partial class Koordinata : Form
     {
-        public Frm_Holmozog()
+        public Koordinata()
         {
             InitializeComponent();
         }
 
-
-        private void PanelIgazit_MouseMove(object sender, MouseEventArgs e)
+        private void Frm_Holmozog_MouseMove(object sender, MouseEventArgs e)
         {
-            Text = String.Format("Az egér koordinátái X:{0}, Y:{1}, e.X, e.Y")
+            Text = String.Format("Az egér koordinátái: X:{0}, Y{1}", e.X, e.Y);
         }
 
-        private void PanelIgazit_Resize(object sender, EventArgs e)
+        private void Frm_Holmozog_Resize(object sender, EventArgs e)
         {
-            Frm_Holmozog();
+            PanelIgazitas();
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void Frm_Holmozog_Load(object sender, EventArgs e)
         {
-            Frm_Holmozog();
+            PanelIgazitas();
+        }
+        private void PanelIgazitas(object sender, EventArgs e)
+        {
+            Panel.Left = (ClientSize.Width - Panel.Width) / 2;
+            Panel.Top = (ClientSize.Height - Panel.Height) / 2;
         }
     }
 }

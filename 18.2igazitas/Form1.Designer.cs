@@ -28,26 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            Igazitas = new Label();
             SuspendLayout();
             // 
-            // label1
+            // Igazitas
             // 
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Top;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(119, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Egyek vagy ne egyek!";
-            label1.MouseClick += label1_MouseClick;
+            Igazitas.AutoSize = true;
+            Igazitas.Location = new Point(337, 55);
+            Igazitas.Name = "Igazitas";
+            Igazitas.Size = new Size(119, 15);
+            Igazitas.TabIndex = 0;
+            Igazitas.Text = "Egyek vagy ne egyek!";
             // 
             // btnIgazitas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(Igazitas);
             Name = "btnIgazitas";
             Text = "Igazítás";
             ResumeLayout(false);
@@ -56,6 +54,6 @@
 
         #endregion
 
-        private Label label1;
+        private Label Igazitas;
     }
 }

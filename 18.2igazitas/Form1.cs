@@ -7,21 +7,21 @@ namespace _18._2igazitas
             InitializeComponent();
         }
 
-        private void label1_MouseClick(object sender, MouseEventArgs e)
+        private void Igazitas_MouseClick(object sender, MouseEventArgs e)
         {
-            int n = e.X / (btnIgazitas.Width / 3);
-            int m = e.Y / (btnIgazitas.Height / 3);
+            int n = e.X / (Igazitas.Width / 3);
+            int m = e.Y / (Igazitas.Height / 3);
             switch (m * 3 + n)
             {
-                case 0: btnIgazitas.TextAlign = ContentAlignment.TopLeft; break;
-                case 1: btnIgazitas.TextAlign = ContentAlignment.TopCenter; break;
-                case 2: btnIgazitas.TextAlign = ContentAlignment.TopRight; break;
-                case 3: btnIgazitas.TextAlign = ContentAlignment.MiddleLeft; break;
-                case 4: btnIgazitas.TextAlign = ContentAlignment.MiddleCenter; break;
-                case 5: btnIgazitas.TextAlign = ContentAlignment.MiddleRight; break;
-                case 6: btnIgazitas.TextAlign = ContentAlignment.BottomLeft; break;
-                case 7: btnIgazitas.TextAlign = ContentAlignment.BottomCenter; break;
-                case 8: btnIgazitas.TextAlign = ContentAlignment.BottomRight; break;
+                case 0: Igazitas.TextAlign = ContentAlignment.TopLeft; break;
+                case 1: Igazitas.TextAlign = ContentAlignment.TopCenter; break;
+                case 2: Igazitas.TextAlign = ContentAlignment.TopRight; break;
+                case 3: Igazitas.TextAlign = ContentAlignment.MiddleLeft; break;
+                case 4: Igazitas.TextAlign = ContentAlignment.MiddleCenter; break;
+                case 5: Igazitas.TextAlign = ContentAlignment.MiddleRight; break;
+                case 6: Igazitas.TextAlign = ContentAlignment.BottomLeft; break;
+                case 7: Igazitas.TextAlign = ContentAlignment.BottomCenter; break;
+                case 8: Igazitas.TextAlign = ContentAlignment.BottomRight; break;
             }
         }
     }
