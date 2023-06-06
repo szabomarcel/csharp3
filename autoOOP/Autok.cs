@@ -29,15 +29,15 @@ namespace autoOOP
         { 
             Auto ak = new Auto();
             ak.marka = marka();
-            rendszam();
-            gyartasev();
-            uzemanyag();
-            szin();
-            abroncsmeret();
-            kilometerallas();
-            ajtokszama();
-            szemelyszam();
-            kinezet();
+            ak.marka = rendszam();
+            ak.marka = gyartasev();
+            ak.marka = uzemanyag();
+            ak.marka = szin();
+            ak.marka = abroncsmeret();
+            ak.marka = kilometerallas();
+            ak.marka = ajtokszama();
+            ak.marka = szemelyszam();
+            ak.marka = kinezet();
             autok.Add(ak);
         }
         #endregion Auto adatainak beolvasása
