@@ -1,4 +1,4 @@
-namespace _18._6Kepekelsoszint
+namespace _18._5es18._6ScrollBar
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace _18._6Kepekelsoszint
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new ScrollBar());
         }
     }
 }
