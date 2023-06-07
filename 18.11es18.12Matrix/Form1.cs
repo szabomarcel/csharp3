@@ -1,6 +1,4 @@
-using System.Windows.Forms;
-
-namespace _18._11es18._12
+namespace _18._11es18._12Matrix
 {
     public partial class Form1 : Form
     {
@@ -27,6 +25,40 @@ namespace _18._11es18._12
                 }
                 dataGridView.Rows.Add(intArrray);
             }
+        }
+        private void EredmenyKiir(int N, int M)
+        {
+            int max = int.MinValue,
+            min = int.MaxValue;
+            int maxi, maxj, mini, minj;
+            maxi = maxj = mini = minj = 0;
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < M; j++)
+                {
+                    if ((int)dataGridView[j, i].Value > max)
+                    {
+                        max = (int)dataGridView[j, i].Value;
+                        maxi = i;
+                        maxj = j;
+                    }
+                    if ((int)dataGridView[j, i].Value < min)
+                    {
+                        min = (int)dataGridView[j, i].Value;
+                        mini = i;
+                        minj = j;
+                    }
+                }
+            }
+            richTextBox.ResetText();
+            richTextBox.AppendText(String.Format("A legnagyobb elem: {0}{1}",
+            max, Environment.NewLine));
+            richTextBox.AppendText(String.Format("A legnagyobb elem indexe:"
+            + "({0},{1}){2}", maxi + 1, maxj + 1, Environment.NewLine));
+            richTextBox.AppendText(String.Format("A legkisebb elem: {0}{1}",
+            min, Environment.NewLine));
+            richTextBox.AppendText(String.Format("A legkisebb elem indexe:"
+            + "({0},{1}){2}", mini + 1, minj + 1, Environment.NewLine));
         }
     }
 }

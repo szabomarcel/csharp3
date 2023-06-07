@@ -1,4 +1,4 @@
-﻿namespace _18._11es18._12
+﻿namespace _18._11es18._12Matrix
 {
     partial class Form1
     {
@@ -28,132 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView = new DataGridView();
+            AdatokFeltolt = new Button();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            richTextBox = new RichTextBox();
+            Szoveg = new Label();
+            Szoveg1 = new Label();
+            EredmenyKiir = new Label();
             N = new NumericUpDown();
             M = new NumericUpDown();
-            AdatFeltolt = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
+            dataGridView = new DataGridView();
+            richTextBox = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)N).BeginInit();
             ((System.ComponentModel.ISupportInitialize)M).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView
+            // AdatokFeltolt
             // 
-            dataGridView.AllowUserToOrderColumns = true;
-            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView.Location = new Point(12, 98);
-            dataGridView.Name = "dataGridView";
-            dataGridView.RowTemplate.Height = 25;
-            dataGridView.Size = new Size(453, 340);
-            dataGridView.TabIndex = 0;
+            AdatokFeltolt.Location = new Point(511, 75);
+            AdatokFeltolt.Name = "AdatokFeltolt";
+            AdatokFeltolt.Size = new Size(75, 23);
+            AdatokFeltolt.TabIndex = 0;
+            AdatokFeltolt.Text = "Mehet";
+            AdatokFeltolt.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(119, 62);
+            label1.Location = new Point(156, 75);
             label1.Name = "label1";
-            label1.Size = new Size(98, 15);
+            label1.Size = new Size(95, 15);
             label1.TabIndex = 1;
-            label1.Text = "A mátrix méretei:";
+            label1.Text = "A mátrix mérete:";
             // 
-            // label2
+            // Szoveg
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(294, 62);
-            label2.Name = "label2";
-            label2.Size = new Size(27, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Sor:";
+            Szoveg.AutoSize = true;
+            Szoveg.Location = new Point(272, 75);
+            Szoveg.Name = "Szoveg";
+            Szoveg.Size = new Size(27, 15);
+            Szoveg.TabIndex = 2;
+            Szoveg.Text = "Sor:";
             // 
-            // label3
+            // Szoveg1
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(419, 62);
-            label3.Name = "label3";
-            label3.Size = new Size(46, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Oszlop:";
+            Szoveg1.AutoSize = true;
+            Szoveg1.Location = new Point(381, 75);
+            Szoveg1.Name = "Szoveg1";
+            Szoveg1.Size = new Size(46, 15);
+            Szoveg1.TabIndex = 3;
+            Szoveg1.Text = "Oszlop:";
             // 
-            // label4
+            // EredmenyKiir
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(511, 98);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Eredmény:";
-            // 
-            // richTextBox
-            // 
-            richTextBox.Location = new Point(511, 116);
-            richTextBox.Name = "richTextBox";
-            richTextBox.Size = new Size(177, 322);
-            richTextBox.TabIndex = 5;
-            richTextBox.Text = "";
+            EredmenyKiir.AutoSize = true;
+            EredmenyKiir.Location = new Point(530, 133);
+            EredmenyKiir.Name = "EredmenyKiir";
+            EredmenyKiir.Size = new Size(56, 15);
+            EredmenyKiir.TabIndex = 4;
+            EredmenyKiir.Text = "Eremény:";
             // 
             // N
             // 
-            N.Location = new Point(328, 60);
+            N.Location = new Point(305, 73);
             N.Name = "N";
-            N.Size = new Size(56, 23);
-            N.TabIndex = 6;
+            N.Size = new Size(38, 23);
+            N.TabIndex = 5;
             // 
             // M
             // 
-            M.Location = new Point(471, 60);
+            M.Location = new Point(425, 73);
             M.Name = "M";
-            M.Size = new Size(56, 23);
-            M.TabIndex = 7;
+            M.Size = new Size(38, 23);
+            M.TabIndex = 6;
             // 
-            // AdatFeltolt
+            // dataGridView
             // 
-            AdatFeltolt.BackColor = Color.Cornsilk;
-            AdatFeltolt.Location = new Point(589, 65);
-            AdatFeltolt.Name = "AdatFeltolt";
-            AdatFeltolt.Size = new Size(75, 23);
-            AdatFeltolt.TabIndex = 8;
-            AdatFeltolt.Text = "Mehet";
-            AdatFeltolt.UseVisualStyleBackColor = false;
-            AdatFeltolt.UseWaitCursor = true;
+            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.Location = new Point(12, 102);
+            dataGridView.Name = "dataGridView";
+            dataGridView.RowTemplate.Height = 25;
+            dataGridView.Size = new Size(464, 327);
+            dataGridView.TabIndex = 7;
+            // 
+            // richTextBox
+            // 
+            richTextBox.Location = new Point(530, 160);
+            richTextBox.Name = "richTextBox";
+            richTextBox.Size = new Size(179, 269);
+            richTextBox.TabIndex = 8;
+            richTextBox.Text = "";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(AdatFeltolt);
+            Controls.Add(richTextBox);
+            Controls.Add(dataGridView);
             Controls.Add(M);
             Controls.Add(N);
-            Controls.Add(richTextBox);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(EredmenyKiir);
+            Controls.Add(Szoveg1);
+            Controls.Add(Szoveg);
             Controls.Add(label1);
-            Controls.Add(dataGridView);
+            Controls.Add(AdatokFeltolt);
             Name = "Form1";
             Text = "Matrix";
-            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)N).EndInit();
             ((System.ComponentModel.ISupportInitialize)M).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView;
+        private Button AdatokFeltolt;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private RichTextBox richTextBox;
+        private Label Szoveg;
+        private Label Szoveg1;
+        private Label EredmenyKiir;
         private NumericUpDown N;
         private NumericUpDown M;
-        private Button AdatFeltolt;
+        private DataGridView dataGridView;
+        private RichTextBox richTextBox;
     }
 }
