@@ -52,9 +52,9 @@
             // Lb_7
             // 
             Lb_7.Image = Properties.Resources.letöltés__7_;
-            Lb_7.Location = new Point(154, 167);
+            Lb_7.Location = new Point(101, 167);
             Lb_7.Name = "Lb_7";
-            Lb_7.Size = new Size(100, 85);
+            Lb_7.Size = new Size(151, 113);
             Lb_7.TabIndex = 0;
             Lb_7.TabStop = false;
             // 
@@ -63,43 +63,43 @@
             Lb_2.Image = Properties.Resources.letöltés__1_;
             Lb_2.Location = new Point(484, 51);
             Lb_2.Name = "Lb_2";
-            Lb_2.Size = new Size(100, 85);
+            Lb_2.Size = new Size(157, 110);
             Lb_2.TabIndex = 1;
             Lb_2.TabStop = false;
             // 
             // Lb_3
             // 
             Lb_3.Image = Properties.Resources.letöltés__2_;
-            Lb_3.Location = new Point(520, 167);
+            Lb_3.Location = new Point(529, 167);
             Lb_3.Name = "Lb_3";
-            Lb_3.Size = new Size(100, 85);
+            Lb_3.Size = new Size(157, 113);
             Lb_3.TabIndex = 2;
             Lb_3.TabStop = false;
             // 
             // Lb_4
             // 
             Lb_4.Image = Properties.Resources.letöltés__3_;
-            Lb_4.Location = new Point(457, 286);
+            Lb_4.Location = new Point(484, 286);
             Lb_4.Name = "Lb_4";
-            Lb_4.Size = new Size(100, 85);
+            Lb_4.Size = new Size(157, 113);
             Lb_4.TabIndex = 3;
             Lb_4.TabStop = false;
             // 
             // Lb_5
             // 
             Lb_5.Image = Properties.Resources.letöltés__5_;
-            Lb_5.Location = new Point(327, 353);
+            Lb_5.Location = new Point(327, 304);
             Lb_5.Name = "Lb_5";
-            Lb_5.Size = new Size(100, 85);
+            Lb_5.Size = new Size(151, 134);
             Lb_5.TabIndex = 4;
             Lb_5.TabStop = false;
             // 
             // Lb_6
             // 
             Lb_6.Image = Properties.Resources.letöltés__6_;
-            Lb_6.Location = new Point(209, 286);
+            Lb_6.Location = new Point(170, 286);
             Lb_6.Name = "Lb_6";
-            Lb_6.Size = new Size(100, 85);
+            Lb_6.Size = new Size(151, 113);
             Lb_6.TabIndex = 5;
             Lb_6.TabStop = false;
             // 
@@ -108,16 +108,16 @@
             Lb_1.Image = Properties.Resources.letöltés;
             Lb_1.Location = new Point(327, 12);
             Lb_1.Name = "Lb_1";
-            Lb_1.Size = new Size(124, 85);
+            Lb_1.Size = new Size(151, 113);
             Lb_1.TabIndex = 6;
             Lb_1.TabStop = false;
             // 
             // Lb_8
             // 
             Lb_8.Image = Properties.Resources.letöltés__4_;
-            Lb_8.Location = new Point(209, 51);
+            Lb_8.Location = new Point(166, 51);
             Lb_8.Name = "Lb_8";
-            Lb_8.Size = new Size(100, 85);
+            Lb_8.Size = new Size(155, 110);
             Lb_8.TabIndex = 7;
             Lb_8.TabStop = false;
             // 
