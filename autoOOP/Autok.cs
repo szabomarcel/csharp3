@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace autoOOP
 {
@@ -48,7 +49,7 @@ namespace autoOOP
             string strmarka = Console.ReadLine();
             Random z = new Random();
             int i = z.Next();
-            while (strmarka.Length >= 20) // 20 szöveg generálása
+            while (strmarka.Length >= 20) // 20 szövegig generálása
             {
                 strmarka = Console.ReadLine();
             }
@@ -63,7 +64,7 @@ namespace autoOOP
         {
             Console.WriteLine("Írja be az autó rendszámét: ");            
             string strrendszam = Console.ReadLine();
-            while (strrendszam != "Ez rendszám-e?")
+            while (strrendszam != "?")
             {
                 Console.WriteLine("Ez nem rendzsám, kérem adja meg újra!");
             }
@@ -114,11 +115,27 @@ namespace autoOOP
         public string uzemanyag()
         {
             Console.WriteLine("Írja be az üzemanyagot, hogy mivel használja az autóját: ");
-            string struzemanyag = "";/*
-            if (uzemanyag = benzin)
+            string struzemanyag = "";
+            string benzin = struzemanyag;
+            string diesel = struzemanyag;
+            string hybrid = struzemanyag;
+            string elektromos = struzemanyag;
+            if(struzemanyag == benzin)
             {
-
-            }*/
+                Console.WriteLine("Az autója környezet tudatos és a városban az egyik legjobb autó.");
+            } 
+            else if(struzemanyag == diesel)
+            {
+                Console.WriteLine("Akkor az autója nem a városba való hanem a városon kivülre.");
+            }
+            else if(struzemanyag == hybrid)
+            {
+                Console.WriteLine("Ez az autó azért jó mert önmagát is tudja tölteni.");
+            }
+            else if(struzemanyag == elektromos)
+            {
+                Console.WriteLine("Ez az autója környezet barát és gyorsulásra is jó az autó.");
+            }
             Console.WriteLine(struzemanyag);
             Console.ReadLine();
             return struzemanyag;
@@ -193,9 +210,24 @@ namespace autoOOP
         #region Ajtókszáma
         public int ajtokszama()
         {
-            Console.WriteLine("Írja 1-től 5-ig írja be, hogy az autó ajtó száma mennyi van rajta: ");
+            Console.WriteLine("Írja 1-től 5-ig írja be, hogy az autó hány ajtók számmal rendelkezik: ");
             int strajtok = 0;
-
+            if (strajtok <= 3)
+            {
+                Console.WriteLine("Ez az autó leginkább sportautó.");
+            }
+            else if(strajtok <= 4)
+            {
+                Console.WriteLine("Ez az autó leginkább családi és limuzin használatú autó.");
+            }
+            else if(strajtok <= 5)
+            {
+                Console.WriteLine("Valószínűleg az autója kombi vagy rövidhájú és könnyeben tud pakolni a cuccait.");
+            }
+            else if(strajtok > 5)
+            {
+                Console.WriteLine("Ez sajnos saját elképzelésű az autója és nem gyerekjáték.");
+            }
             return strajtok;
         }
         #endregion Ajtókszáma
@@ -205,6 +237,18 @@ namespace autoOOP
         {
             Console.WriteLine("Írja be hogy hány személy utazhat az autójában: ");
             int strszemelyek = 0;
+            if(strszemelyek < 5)
+            {
+                Console.WriteLine("Elférnek az autóban.");
+            }
+            else if(strszemelyek <= 5)
+            {
+                Console.WriteLine("Épp hogy elférnek az autóban.");
+            }
+            else
+            {
+                Console.WriteLine("Ez nem autó lesz hanem kisbusz vagy nagybusz.");
+            }
             return strszemelyek;
         }
         #endregion Személyekszáma
@@ -214,6 +258,25 @@ namespace autoOOP
         {
             Console.WriteLine("Adja meg, hogy milyen a kinézete az autójának: (választható: kombi, sedan, bogárhátú): ");
             string strkinezet = "";
+            string kombi = strkinezet;
+            string sedan = strkinezet;
+            string bogarhatu = strkinezet;
+            if(strkinezet == kombi)
+            {
+                Console.WriteLine("Ez az az autó ami könnyű a pakolási lehetőség.");
+            }
+            else if (strkinezet == sedan)
+            {
+                Console.WriteLine("Ez az az autó leginkább limunzin fajtához képzelhető el.");
+            }
+            else if (strkinezet == bogarhatu)
+            {
+                Console.WriteLine("Ez az az autó leginkább a városba jó közlekedni mert kisebb helyen is elfér.");
+            }
+            else
+            {
+                Console.WriteLine("Ez az autó nem fér el a megadott osztáyba.");
+            }
             return strkinezet;
         }
         #endregion Kinézet

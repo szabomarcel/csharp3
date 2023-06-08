@@ -171,7 +171,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18.7es18.8Komponens", "18.7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18.9es18.10Halmazok", "18.9es18.10Halmazok\18.9es18.10Halmazok.csproj", "{D15D8333-0798-43E3-8B24-C0EDE6C35D88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.11es18.12Matrix", "18.11es18.12Matrix\18.11es18.12Matrix.csproj", "{9F9D89D9-0741-4905-BFDF-A69B399F8540}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18.11es18.12Matrix", "18.11es18.12Matrix\18.11es18.12Matrix.csproj", "{9F9D89D9-0741-4905-BFDF-A69B399F8540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
