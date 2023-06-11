@@ -74,7 +74,7 @@
             // 
             // N
             // 
-            N.Location = new Point(478, 348);
+            N.Location = new Point(555, 348);
             N.Name = "N";
             N.Size = new Size(135, 90);
             N.TabIndex = 4;
