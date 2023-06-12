@@ -28,200 +28,196 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnTeljesenFel = new Button();
-            btnFel = new Button();
-            btnKozepre = new Button();
-            btnLe = new Button();
-            button4 = new Button();
-            btnTeljesenLe = new Button();
-            btnBal = new Button();
-            btnTeljesneBalra = new Button();
-            btnJobbra = new Button();
-            btnTeljesenJobbra = new Button();
-            btnNovekvo = new Button();
-            btnCsokkeno = new Button();
-            btNovekvo = new Button();
-            btCsokkeno = new Button();
-            Atlatszodas = new Label();
-            Meret = new Label();
-            SuspendLayout();
+            this.btnTeljesenFel = new System.Windows.Forms.Button();
+            this.btnFel = new System.Windows.Forms.Button();
+            this.btnKozepre = new System.Windows.Forms.Button();
+            this.btnLe = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnTeljesenLe = new System.Windows.Forms.Button();
+            this.btnBal = new System.Windows.Forms.Button();
+            this.btnTeljesneBalra = new System.Windows.Forms.Button();
+            this.btnJobbra = new System.Windows.Forms.Button();
+            this.btnTeljesenJobbra = new System.Windows.Forms.Button();
+            this.btnNovekvo = new System.Windows.Forms.Button();
+            this.btnCsokkeno = new System.Windows.Forms.Button();
+            this.btNovekvo = new System.Windows.Forms.Button();
+            this.btCsokkeno = new System.Windows.Forms.Button();
+            this.Atlatszodas = new System.Windows.Forms.Label();
+            this.Meret = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // btnTeljesenFel
             // 
-            btnTeljesenFel.Location = new Point(328, 148);
-            btnTeljesenFel.Name = "btnTeljesenFel";
-            btnTeljesenFel.Size = new Size(75, 23);
-            btnTeljesenFel.TabIndex = 0;
-            btnTeljesenFel.Text = "Teljesen";
-            btnTeljesenFel.UseVisualStyleBackColor = true;
+            this.btnTeljesenFel.Location = new System.Drawing.Point(328, 148);
+            this.btnTeljesenFel.Name = "btnTeljesenFel";
+            this.btnTeljesenFel.Size = new System.Drawing.Size(75, 23);
+            this.btnTeljesenFel.TabIndex = 0;
+            this.btnTeljesenFel.Text = "Teljesen";
+            this.btnTeljesenFel.UseVisualStyleBackColor = true;
+            this.btnTeljesenFel.Click += new System.EventHandler(this.btnTeljesenFel_Click);
             // 
             // btnFel
             // 
-            btnFel.Location = new Point(328, 177);
-            btnFel.Name = "btnFel";
-            btnFel.Size = new Size(75, 23);
-            btnFel.TabIndex = 1;
-            btnFel.Text = "Fel";
-            btnFel.UseVisualStyleBackColor = true;
-            btnFel.Click += btnFel_Click;
+            this.btnFel.Location = new System.Drawing.Point(328, 177);
+            this.btnFel.Name = "btnFel";
+            this.btnFel.Size = new System.Drawing.Size(75, 23);
+            this.btnFel.TabIndex = 1;
+            this.btnFel.Text = "Fel";
+            this.btnFel.UseVisualStyleBackColor = true;
             // 
             // btnKozepre
             // 
-            btnKozepre.Location = new Point(328, 208);
-            btnKozepre.Name = "btnKozepre";
-            btnKozepre.Size = new Size(75, 23);
-            btnKozepre.TabIndex = 2;
-            btnKozepre.Text = "Középre";
-            btnKozepre.UseVisualStyleBackColor = true;
-            btnKozepre.Click += btnKozepre_Click;
+            this.btnKozepre.Location = new System.Drawing.Point(328, 208);
+            this.btnKozepre.Name = "btnKozepre";
+            this.btnKozepre.Size = new System.Drawing.Size(75, 23);
+            this.btnKozepre.TabIndex = 2;
+            this.btnKozepre.Text = "Középre";
+            this.btnKozepre.UseVisualStyleBackColor = true;
             // 
             // btnLe
             // 
-            btnLe.Location = new Point(328, 237);
-            btnLe.Name = "btnLe";
-            btnLe.Size = new Size(75, 23);
-            btnLe.TabIndex = 3;
-            btnLe.Text = "Le";
-            btnLe.UseVisualStyleBackColor = true;
-            btnLe.Click += btnLe_Click;
+            this.btnLe.Location = new System.Drawing.Point(328, 237);
+            this.btnLe.Name = "btnLe";
+            this.btnLe.Size = new System.Drawing.Size(75, 23);
+            this.btnLe.TabIndex = 3;
+            this.btnLe.Text = "Le";
+            this.btnLe.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(452, 337);
-            button4.Name = "button4";
-            button4.Size = new Size(8, 8);
-            button4.TabIndex = 4;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(452, 337);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(8, 8);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // btnTeljesenLe
             // 
-            btnTeljesenLe.Location = new Point(328, 266);
-            btnTeljesenLe.Name = "btnTeljesenLe";
-            btnTeljesenLe.Size = new Size(75, 23);
-            btnTeljesenLe.TabIndex = 5;
-            btnTeljesenLe.Text = "Teljesen";
-            btnTeljesenLe.UseVisualStyleBackColor = true;
+            this.btnTeljesenLe.Location = new System.Drawing.Point(328, 266);
+            this.btnTeljesenLe.Name = "btnTeljesenLe";
+            this.btnTeljesenLe.Size = new System.Drawing.Size(75, 23);
+            this.btnTeljesenLe.TabIndex = 5;
+            this.btnTeljesenLe.Text = "Teljesen";
+            this.btnTeljesenLe.UseVisualStyleBackColor = true;
+            this.btnTeljesenLe.Click += new System.EventHandler(this.btnTeljesenLe_Click);
             // 
             // btnBal
             // 
-            btnBal.Location = new Point(247, 208);
-            btnBal.Name = "btnBal";
-            btnBal.Size = new Size(75, 23);
-            btnBal.TabIndex = 6;
-            btnBal.Text = "Bal";
-            btnBal.UseVisualStyleBackColor = true;
+            this.btnBal.Location = new System.Drawing.Point(247, 208);
+            this.btnBal.Name = "btnBal";
+            this.btnBal.Size = new System.Drawing.Size(75, 23);
+            this.btnBal.TabIndex = 6;
+            this.btnBal.Text = "Bal";
+            this.btnBal.UseVisualStyleBackColor = true;
             // 
             // btnTeljesneBalra
             // 
-            btnTeljesneBalra.Location = new Point(166, 208);
-            btnTeljesneBalra.Name = "btnTeljesneBalra";
-            btnTeljesneBalra.Size = new Size(75, 23);
-            btnTeljesneBalra.TabIndex = 7;
-            btnTeljesneBalra.Text = "Teljesen";
-            btnTeljesneBalra.UseVisualStyleBackColor = true;
+            this.btnTeljesneBalra.Location = new System.Drawing.Point(166, 208);
+            this.btnTeljesneBalra.Name = "btnTeljesneBalra";
+            this.btnTeljesneBalra.Size = new System.Drawing.Size(75, 23);
+            this.btnTeljesneBalra.TabIndex = 7;
+            this.btnTeljesneBalra.Text = "Teljesen";
+            this.btnTeljesneBalra.UseVisualStyleBackColor = true;
             // 
             // btnJobbra
             // 
-            btnJobbra.Location = new Point(409, 208);
-            btnJobbra.Name = "btnJobbra";
-            btnJobbra.Size = new Size(75, 23);
-            btnJobbra.TabIndex = 8;
-            btnJobbra.Text = "Jobbra";
-            btnJobbra.UseVisualStyleBackColor = true;
+            this.btnJobbra.Location = new System.Drawing.Point(409, 208);
+            this.btnJobbra.Name = "btnJobbra";
+            this.btnJobbra.Size = new System.Drawing.Size(75, 23);
+            this.btnJobbra.TabIndex = 8;
+            this.btnJobbra.Text = "Jobbra";
+            this.btnJobbra.UseVisualStyleBackColor = true;
             // 
             // btnTeljesenJobbra
             // 
-            btnTeljesenJobbra.Location = new Point(490, 208);
-            btnTeljesenJobbra.Name = "btnTeljesenJobbra";
-            btnTeljesenJobbra.Size = new Size(75, 23);
-            btnTeljesenJobbra.TabIndex = 9;
-            btnTeljesenJobbra.Text = "Teljesen";
-            btnTeljesenJobbra.UseVisualStyleBackColor = true;
+            this.btnTeljesenJobbra.Location = new System.Drawing.Point(490, 208);
+            this.btnTeljesenJobbra.Name = "btnTeljesenJobbra";
+            this.btnTeljesenJobbra.Size = new System.Drawing.Size(75, 23);
+            this.btnTeljesenJobbra.TabIndex = 9;
+            this.btnTeljesenJobbra.Text = "Teljesen";
+            this.btnTeljesenJobbra.UseVisualStyleBackColor = true;
             // 
             // btnNovekvo
             // 
-            btnNovekvo.Location = new Point(283, 78);
-            btnNovekvo.Name = "btnNovekvo";
-            btnNovekvo.Size = new Size(75, 23);
-            btnNovekvo.TabIndex = 10;
-            btnNovekvo.Text = "Növekvö";
-            btnNovekvo.UseVisualStyleBackColor = true;
-            btnNovekvo.Click += btnNovekvo_Click;
+            this.btnNovekvo.Location = new System.Drawing.Point(283, 78);
+            this.btnNovekvo.Name = "btnNovekvo";
+            this.btnNovekvo.Size = new System.Drawing.Size(75, 23);
+            this.btnNovekvo.TabIndex = 10;
+            this.btnNovekvo.Text = "Növekvö";
+            this.btnNovekvo.UseVisualStyleBackColor = true;
             // 
             // btnCsokkeno
             // 
-            btnCsokkeno.Location = new Point(385, 78);
-            btnCsokkeno.Name = "btnCsokkeno";
-            btnCsokkeno.Size = new Size(75, 23);
-            btnCsokkeno.TabIndex = 11;
-            btnCsokkeno.Text = "Csökkenő";
-            btnCsokkeno.UseVisualStyleBackColor = true;
-            btnCsokkeno.Click += btnCsokkeno_Click;
+            this.btnCsokkeno.Location = new System.Drawing.Point(385, 78);
+            this.btnCsokkeno.Name = "btnCsokkeno";
+            this.btnCsokkeno.Size = new System.Drawing.Size(75, 23);
+            this.btnCsokkeno.TabIndex = 11;
+            this.btnCsokkeno.Text = "Csökkenő";
+            this.btnCsokkeno.UseVisualStyleBackColor = true;
             // 
             // btNovekvo
             // 
-            btNovekvo.Location = new Point(283, 337);
-            btNovekvo.Name = "btNovekvo";
-            btNovekvo.Size = new Size(75, 23);
-            btNovekvo.TabIndex = 12;
-            btNovekvo.Text = "Növekvö";
-            btNovekvo.UseVisualStyleBackColor = true;
-            btNovekvo.Click += btNovekvo_Click;
+            this.btNovekvo.Location = new System.Drawing.Point(283, 337);
+            this.btNovekvo.Name = "btNovekvo";
+            this.btNovekvo.Size = new System.Drawing.Size(75, 23);
+            this.btNovekvo.TabIndex = 12;
+            this.btNovekvo.Text = "Növekvö";
+            this.btNovekvo.UseVisualStyleBackColor = true;
             // 
             // btCsokkeno
             // 
-            btCsokkeno.Location = new Point(385, 337);
-            btCsokkeno.Name = "btCsokkeno";
-            btCsokkeno.Size = new Size(75, 23);
-            btCsokkeno.TabIndex = 13;
-            btCsokkeno.Text = "Csökkenő";
-            btCsokkeno.UseVisualStyleBackColor = true;
-            btCsokkeno.Click += btCsokkeno_Click;
+            this.btCsokkeno.Location = new System.Drawing.Point(385, 337);
+            this.btCsokkeno.Name = "btCsokkeno";
+            this.btCsokkeno.Size = new System.Drawing.Size(75, 23);
+            this.btCsokkeno.TabIndex = 13;
+            this.btCsokkeno.Text = "Csökkenő";
+            this.btCsokkeno.UseVisualStyleBackColor = true;
             // 
             // Atlatszodas
             // 
-            Atlatszodas.AutoSize = true;
-            Atlatszodas.Location = new Point(174, 337);
-            Atlatszodas.Name = "Atlatszodas";
-            Atlatszodas.Size = new Size(70, 15);
-            Atlatszodas.TabIndex = 14;
-            Atlatszodas.Text = "Atlátszoság:";
+            this.Atlatszodas.AutoSize = true;
+            this.Atlatszodas.Location = new System.Drawing.Point(174, 337);
+            this.Atlatszodas.Name = "Atlatszodas";
+            this.Atlatszodas.Size = new System.Drawing.Size(70, 15);
+            this.Atlatszodas.TabIndex = 14;
+            this.Atlatszodas.Text = "Atlátszoság:";
             // 
             // Meret
             // 
-            Meret.AutoSize = true;
-            Meret.Location = new Point(203, 82);
-            Meret.Name = "Meret";
-            Meret.Size = new Size(41, 15);
-            Meret.TabIndex = 15;
-            Meret.Text = "Méret:";
+            this.Meret.AutoSize = true;
+            this.Meret.Location = new System.Drawing.Point(203, 82);
+            this.Meret.Name = "Meret";
+            this.Meret.Size = new System.Drawing.Size(41, 15);
+            this.Meret.TabIndex = 15;
+            this.Meret.Text = "Méret:";
             // 
             // Mozog
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(Meret);
-            Controls.Add(Atlatszodas);
-            Controls.Add(btCsokkeno);
-            Controls.Add(btNovekvo);
-            Controls.Add(btnCsokkeno);
-            Controls.Add(btnNovekvo);
-            Controls.Add(btnTeljesenJobbra);
-            Controls.Add(btnJobbra);
-            Controls.Add(btnTeljesneBalra);
-            Controls.Add(btnBal);
-            Controls.Add(btnTeljesenLe);
-            Controls.Add(button4);
-            Controls.Add(btnLe);
-            Controls.Add(btnKozepre);
-            Controls.Add(btnFel);
-            Controls.Add(btnTeljesenFel);
-            Name = "Mozog";
-            Text = "Mozog";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Meret);
+            this.Controls.Add(this.Atlatszodas);
+            this.Controls.Add(this.btCsokkeno);
+            this.Controls.Add(this.btNovekvo);
+            this.Controls.Add(this.btnCsokkeno);
+            this.Controls.Add(this.btnNovekvo);
+            this.Controls.Add(this.btnTeljesenJobbra);
+            this.Controls.Add(this.btnJobbra);
+            this.Controls.Add(this.btnTeljesneBalra);
+            this.Controls.Add(this.btnBal);
+            this.Controls.Add(this.btnTeljesenLe);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnLe);
+            this.Controls.Add(this.btnKozepre);
+            this.Controls.Add(this.btnFel);
+            this.Controls.Add(this.btnTeljesenFel);
+            this.Name = "Mozog";
+            this.Text = "Mozog";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

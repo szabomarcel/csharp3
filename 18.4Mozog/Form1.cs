@@ -48,7 +48,7 @@ namespace _18._4Mozog
         private void btnFel_Click(object sender, EventArgs e)
         {
             int btnMeret = 1;
-            if (Top - btnMeret < 0)
+            if (Top - btnMeret > 0)
             {
                 Top -= btnMeret;
             }
@@ -62,17 +62,27 @@ namespace _18._4Mozog
 
         private void btnLe_Click(object sender, EventArgs e)
         {
-            int btnMeret = 1;
-            if (Top + btnMeret < 0)
-            {
-                Top += btnMeret;
-            }
-            else
+            Top += 10;
+            if (Top == (Screen.PrimaryScreen.Bounds.Height - Height))
             {
                 Top = 0;
-                btnFel.Visible = btnTeljesenFel.Visible = true;
+                btnFel.Visible = btnTeljesenFel.Visible = false;
             }
-            btnLe.Visible = btnTeljesenLe.Visible = false;
+            btnLe.Visible = btnTeljesenLe.Visible = true;
+        }
+
+        private void btnTeljesenFel_Click(object sender, EventArgs e)
+        {
+            Top = 0;
+            btnTeljesenFel.Visible = btnTeljesenFel.Visible = false;
+            btnTeljesenFel.Visible = btnTeljesenFel.Visible = true;
+        }
+
+        private void btnTeljesenLe_Click(object sender, EventArgs e)
+        {
+            Top = (Screen.PrimaryScreen.Bounds.Height - Height);
+            btnTeljesenLe.Visible = btnTeljesenLe.Visible = false;
+            btnTeljesenLe.Visible = btnTeljesenLe.Visible = true;
         }
     }
 }
