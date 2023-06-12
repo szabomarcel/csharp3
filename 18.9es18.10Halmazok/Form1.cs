@@ -15,8 +15,8 @@ namespace _18._9es18._10Halmazok
             HalmazGeneral(LBx_B, Convert.ToInt32(TBx_B.Text));
             Metszet(LBx_A, LBx_B, LBx_Metsz);
             Unio(LBx_A, LBx_B, LBx_Unio);
-            //Minusz(LBx_A, LBx_B, LBx_A_B);
-            //Minusz(LBx_B, LBx_A, LBx_B_A);
+            Minusz(LBx_A, LBx_B, LBx_A_B);
+            Minusz(LBx_B, LBx_A, LBx_B_A);
         }
         private void HalmazGeneral(ListBox LB, int N)
         {
@@ -66,6 +66,17 @@ namespace _18._9es18._10Halmazok
                 if (Bennevan(LBx_B, LBx_A.Items[i]))
                 {
                     LBx_Metsz.Items.Add(LBx_A.Items[i]);
+                }
+            }
+        }
+        private void Minusz(ListBox LBx_A, ListBox LBx_B, ListBox LBx_A_B)
+        {
+            LBx_A_B.Items.Clear();
+            for(int i = 0; i < LBx_A.Items.Count; i++)
+            {
+                if(!Bennevan(LBx_B, LBx_A.Items[i]))
+                {
+                    LBx_A_B.Items.Add(LBx_A.Items[i]);
                 }
             }
         }
