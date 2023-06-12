@@ -12,14 +12,15 @@ namespace autoOOP
         {
             Autok kiir = new Autok();
             kiir.marka();
-            sorOsszeg.k = 0;
-            sorOsszeg.osszeg = 0;
-            sorOsszeg.szam = "0";
-
-            Console.WriteLine("A megadott márka: ", kiir.marka());
-            Console.WriteLine("Add neg a k pozítiv számot:", sorOsszeg.k);
-            Console.WriteLine("Összeg: {0}", sorOsszeg.osszeg);
-            Console.WriteLine("A számjegyek osszege: {0}.", sorOsszeg.s);
+            kiir.rendszam();
+            kiir.gyartasev();
+            kiir.uzemanyag();
+            kiir.szin();
+            kiir.abroncsmeret();
+            kiir.kilometerallas();
+            kiir.ajtokszama();
+            kiir.szemelyszam();
+            kiir.kinezet();
             Console.ReadLine();
         }
     }
