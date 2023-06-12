@@ -1,29 +1,29 @@
 namespace _18._3Koordinata
 {
-    public partial class Koordinata : Form
+    public partial class Form1 : Form
     {
-        public Koordinata()
+        public Form1()
         {
             InitializeComponent();
         }
-
-        private void Frm_Holmozog_MouseMove(object sender, MouseEventArgs e)
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            Text = String.Format("Az egér koordinátái: X:{0}, Y{1}", e.X, e.Y);
+            Text = String.Format("AzegérkoordinátáiX:{0},Y:{1}", e.X, e.Y);
         }
 
-        private void Frm_Holmozog_Resize(object sender, EventArgs e)
+        private void Form1_Resize(object sender, EventArgs e)
         {
-            PanelIgazitas();
+            PanelIgazit();
         }
-        private void Frm_Holmozog_Load(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            PanelIgazitas();
+            PanelIgazit();
         }
-        private void PanelIgazitas(object sender, EventArgs e)
+        private void PanelIgazit()
         {
-            Panel.Left = (ClientSize.Width - Panel.Width) / 2;
-            Panel.Top = (ClientSize.Height - Panel.Height) / 2;
+            panel1.Left = (ClientSize.Width - panel1.Width) / 2;
+            panel1.Top = (ClientSize.Height - panel1.Height) / 2;
         }
     }
 }

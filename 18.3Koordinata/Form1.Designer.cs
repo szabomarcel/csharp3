@@ -1,6 +1,6 @@
 ﻿namespace _18._3Koordinata
 {
-    partial class Koordinata
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Frm_Holmozog = new Panel();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
             // 
-            // Frm_Holmozog
+            // panel1
             // 
-            Frm_Holmozog.BackColor = Color.ForestGreen;
-            Frm_Holmozog.Location = new Point(277, 115);
-            Frm_Holmozog.Name = "Frm_Holmozog";
-            Frm_Holmozog.Size = new Size(212, 172);
-            Frm_Holmozog.TabIndex = 0;
-            Frm_Holmozog.MouseMove += Frm_Holmozog_MouseMove;
-            Frm_Holmozog.Resize += Frm_Holmozog_Resize;
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Location = new System.Drawing.Point(231, 114);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(271, 227);
+            this.panel1.TabIndex = 0;
             // 
-            // Koordinata
+            // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(Frm_Holmozog);
-            Name = "Koordinata";
-            Text = "Koordinata";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
+            this.Name = "Form1";
+            this.Text = "Koordinata";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private Panel Frm_Holmozog;
+        private Panel panel1;
     }
 }

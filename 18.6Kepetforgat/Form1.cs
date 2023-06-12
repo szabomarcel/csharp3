@@ -32,5 +32,10 @@ namespace _18._6Kepetforgat
             Lb_2.Image = Lb_1.Image;
             Lb_1.Image = s;
         }
+
+        private void btnBal_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
