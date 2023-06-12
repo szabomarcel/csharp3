@@ -28,117 +28,119 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Adatfeltolt = new Button();
-            SzovegMatrix = new Label();
-            N = new NumericUpDown();
-            richTextBox = new RichTextBox();
-            dataGridView = new DataGridView();
-            Sor = new Label();
-            Oszlop = new Label();
-            Eredmény = new Label();
-            M = new NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)N).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)M).BeginInit();
-            SuspendLayout();
+            this.Adatfeltolt = new System.Windows.Forms.Button();
+            this.SzovegMatrix = new System.Windows.Forms.Label();
+            this.N = new System.Windows.Forms.NumericUpDown();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Sor = new System.Windows.Forms.Label();
+            this.Oszlop = new System.Windows.Forms.Label();
+            this.Eredmény = new System.Windows.Forms.Label();
+            this.M = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.N)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M)).BeginInit();
+            this.SuspendLayout();
             // 
             // Adatfeltolt
             // 
-            Adatfeltolt.Location = new Point(546, 81);
-            Adatfeltolt.Name = "Adatfeltolt";
-            Adatfeltolt.Size = new Size(75, 23);
-            Adatfeltolt.TabIndex = 0;
-            Adatfeltolt.Text = "Mehet";
-            Adatfeltolt.UseVisualStyleBackColor = true;
+            this.Adatfeltolt.Location = new System.Drawing.Point(546, 81);
+            this.Adatfeltolt.Name = "Adatfeltolt";
+            this.Adatfeltolt.Size = new System.Drawing.Size(75, 23);
+            this.Adatfeltolt.TabIndex = 0;
+            this.Adatfeltolt.Text = "Mehet";
+            this.Adatfeltolt.UseVisualStyleBackColor = true;
+            this.Adatfeltolt.Click += new System.EventHandler(this.Adatfeltolt_Click);
             // 
             // SzovegMatrix
             // 
-            SzovegMatrix.AutoSize = true;
-            SzovegMatrix.Location = new Point(167, 57);
-            SzovegMatrix.Name = "SzovegMatrix";
-            SzovegMatrix.Size = new Size(84, 15);
-            SzovegMatrix.TabIndex = 1;
-            SzovegMatrix.Text = "Mátrix mérete:";
+            this.SzovegMatrix.AutoSize = true;
+            this.SzovegMatrix.Location = new System.Drawing.Point(167, 57);
+            this.SzovegMatrix.Name = "SzovegMatrix";
+            this.SzovegMatrix.Size = new System.Drawing.Size(84, 15);
+            this.SzovegMatrix.TabIndex = 1;
+            this.SzovegMatrix.Text = "Mátrix mérete:";
             // 
             // N
             // 
-            N.Location = new Point(330, 55);
-            N.Name = "N";
-            N.Size = new Size(42, 23);
-            N.TabIndex = 2;
+            this.N.Location = new System.Drawing.Point(330, 55);
+            this.N.Name = "N";
+            this.N.Size = new System.Drawing.Size(42, 23);
+            this.N.TabIndex = 2;
             // 
             // richTextBox
             // 
-            richTextBox.Location = new Point(546, 148);
-            richTextBox.Name = "richTextBox";
-            richTextBox.Size = new Size(148, 259);
-            richTextBox.TabIndex = 3;
-            richTextBox.Text = "";
+            this.richTextBox.Location = new System.Drawing.Point(546, 148);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(148, 259);
+            this.richTextBox.TabIndex = 3;
+            this.richTextBox.Text = "";
             // 
             // dataGridView
             // 
-            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView.Location = new Point(44, 119);
-            dataGridView.Name = "dataGridView";
-            dataGridView.RowTemplate.Height = 25;
-            dataGridView.Size = new Size(460, 288);
-            dataGridView.TabIndex = 4;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(44, 119);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowTemplate.Height = 25;
+            this.dataGridView.Size = new System.Drawing.Size(460, 288);
+            this.dataGridView.TabIndex = 4;
             // 
             // Sor
             // 
-            Sor.AutoSize = true;
-            Sor.Location = new Point(297, 57);
-            Sor.Name = "Sor";
-            Sor.Size = new Size(27, 15);
-            Sor.TabIndex = 5;
-            Sor.Text = "Sor:";
+            this.Sor.AutoSize = true;
+            this.Sor.Location = new System.Drawing.Point(297, 57);
+            this.Sor.Name = "Sor";
+            this.Sor.Size = new System.Drawing.Size(27, 15);
+            this.Sor.TabIndex = 5;
+            this.Sor.Text = "Sor:";
             // 
             // Oszlop
             // 
-            Oszlop.AutoSize = true;
-            Oszlop.Location = new Point(410, 57);
-            Oszlop.Name = "Oszlop";
-            Oszlop.Size = new Size(46, 15);
-            Oszlop.TabIndex = 6;
-            Oszlop.Text = "Oszlop:";
+            this.Oszlop.AutoSize = true;
+            this.Oszlop.Location = new System.Drawing.Point(410, 57);
+            this.Oszlop.Name = "Oszlop";
+            this.Oszlop.Size = new System.Drawing.Size(46, 15);
+            this.Oszlop.TabIndex = 6;
+            this.Oszlop.Text = "Oszlop:";
             // 
             // Eredmény
             // 
-            Eredmény.AutoSize = true;
-            Eredmény.Location = new Point(546, 119);
-            Eredmény.Name = "Eredmény";
-            Eredmény.Size = new Size(63, 15);
-            Eredmény.TabIndex = 7;
-            Eredmény.Text = "Eredmény:";
+            this.Eredmény.AutoSize = true;
+            this.Eredmény.Location = new System.Drawing.Point(546, 119);
+            this.Eredmény.Name = "Eredmény";
+            this.Eredmény.Size = new System.Drawing.Size(63, 15);
+            this.Eredmény.TabIndex = 7;
+            this.Eredmény.Text = "Eredmény:";
             // 
             // M
             // 
-            M.Location = new Point(462, 55);
-            M.Name = "M";
-            M.Size = new Size(42, 23);
-            M.TabIndex = 8;
+            this.M.Location = new System.Drawing.Point(462, 55);
+            this.M.Name = "M";
+            this.M.Size = new System.Drawing.Size(42, 23);
+            this.M.TabIndex = 8;
             // 
             // Szoveg
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(M);
-            Controls.Add(Eredmény);
-            Controls.Add(Oszlop);
-            Controls.Add(Sor);
-            Controls.Add(dataGridView);
-            Controls.Add(richTextBox);
-            Controls.Add(N);
-            Controls.Add(SzovegMatrix);
-            Controls.Add(Adatfeltolt);
-            Name = "Szoveg";
-            Text = "Matrix";
-            ((System.ComponentModel.ISupportInitialize)N).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
-            ((System.ComponentModel.ISupportInitialize)M).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.M);
+            this.Controls.Add(this.Eredmény);
+            this.Controls.Add(this.Oszlop);
+            this.Controls.Add(this.Sor);
+            this.Controls.Add(this.dataGridView);
+            this.Controls.Add(this.richTextBox);
+            this.Controls.Add(this.N);
+            this.Controls.Add(this.SzovegMatrix);
+            this.Controls.Add(this.Adatfeltolt);
+            this.Name = "Szoveg";
+            this.Text = "Matrix";
+            ((System.ComponentModel.ISupportInitialize)(this.N)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

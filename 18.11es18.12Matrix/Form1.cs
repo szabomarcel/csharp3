@@ -59,5 +59,13 @@ namespace _18._11es18._12Matrix
             richTextBox.AppendText(String.Format("A legnagyobb elem: {0}{1}", min, Environment.NewLine));
             richTextBox.AppendText(String.Format("A legnagyobb elem indexe:" + "({0}, {1}) {2}", mini + 1, minj + 1, Environment.NewLine));
         }
+
+        private void Adatfeltolt_Click(object sender, EventArgs e)
+        {
+            int s = Convert.ToInt32(int.MaxValue);
+            int o = Convert.ToInt32(int.MinValue);
+            AdatokFeltolt(s, o);
+            EredmenyKiir(s, o);
+        }
     }
 }
