@@ -138,7 +138,6 @@
             this.btnBal.TabIndex = 9;
             this.btnBal.Text = "Bal";
             this.btnBal.UseVisualStyleBackColor = true;
-            this.btnBal.Click += new System.EventHandler(this.btnBal_Click_1);
             // 
             // Form1
             // 
