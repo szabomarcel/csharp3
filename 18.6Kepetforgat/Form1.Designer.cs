@@ -28,144 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lb_7 = new System.Windows.Forms.PictureBox();
-            this.Lb_2 = new System.Windows.Forms.PictureBox();
-            this.Lb_3 = new System.Windows.Forms.PictureBox();
-            this.Lb_4 = new System.Windows.Forms.PictureBox();
-            this.Lb_5 = new System.Windows.Forms.PictureBox();
-            this.Lb_6 = new System.Windows.Forms.PictureBox();
-            this.Lb_1 = new System.Windows.Forms.PictureBox();
-            this.Lb_8 = new System.Windows.Forms.PictureBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.btnJobb = new System.Windows.Forms.Button();
-            this.btnBal = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_8)).BeginInit();
-            this.SuspendLayout();
+            Lb_7 = new PictureBox();
+            Lb_2 = new PictureBox();
+            Lb_3 = new PictureBox();
+            Lb_4 = new PictureBox();
+            Lb_5 = new PictureBox();
+            Lb_6 = new PictureBox();
+            Lb_1 = new PictureBox();
+            Lb_8 = new PictureBox();
+            colorDialog1 = new ColorDialog();
+            btnJobb = new Button();
+            btnBal = new Button();
+            ((System.ComponentModel.ISupportInitialize)Lb_7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_8).BeginInit();
+            SuspendLayout();
             // 
             // Lb_7
             // 
-            this.Lb_7.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__7_;
-            this.Lb_7.Location = new System.Drawing.Point(101, 167);
-            this.Lb_7.Name = "Lb_7";
-            this.Lb_7.Size = new System.Drawing.Size(151, 113);
-            this.Lb_7.TabIndex = 0;
-            this.Lb_7.TabStop = false;
+            Lb_7.Image = Properties.Resources.letöltés__7_;
+            Lb_7.Location = new Point(101, 167);
+            Lb_7.Name = "Lb_7";
+            Lb_7.Size = new Size(151, 113);
+            Lb_7.TabIndex = 0;
+            Lb_7.TabStop = false;
             // 
             // Lb_2
             // 
-            this.Lb_2.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__1_;
-            this.Lb_2.Location = new System.Drawing.Point(484, 51);
-            this.Lb_2.Name = "Lb_2";
-            this.Lb_2.Size = new System.Drawing.Size(157, 110);
-            this.Lb_2.TabIndex = 1;
-            this.Lb_2.TabStop = false;
+            Lb_2.Image = Properties.Resources.letöltés__1_;
+            Lb_2.Location = new Point(484, 51);
+            Lb_2.Name = "Lb_2";
+            Lb_2.Size = new Size(157, 110);
+            Lb_2.TabIndex = 1;
+            Lb_2.TabStop = false;
             // 
             // Lb_3
             // 
-            this.Lb_3.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__2_;
-            this.Lb_3.Location = new System.Drawing.Point(529, 167);
-            this.Lb_3.Name = "Lb_3";
-            this.Lb_3.Size = new System.Drawing.Size(157, 113);
-            this.Lb_3.TabIndex = 2;
-            this.Lb_3.TabStop = false;
+            Lb_3.Image = Properties.Resources.letöltés__2_;
+            Lb_3.Location = new Point(529, 167);
+            Lb_3.Name = "Lb_3";
+            Lb_3.Size = new Size(157, 113);
+            Lb_3.TabIndex = 2;
+            Lb_3.TabStop = false;
             // 
             // Lb_4
             // 
-            this.Lb_4.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__3_;
-            this.Lb_4.Location = new System.Drawing.Point(484, 286);
-            this.Lb_4.Name = "Lb_4";
-            this.Lb_4.Size = new System.Drawing.Size(157, 113);
-            this.Lb_4.TabIndex = 3;
-            this.Lb_4.TabStop = false;
+            Lb_4.Image = Properties.Resources.letöltés__3_;
+            Lb_4.Location = new Point(484, 286);
+            Lb_4.Name = "Lb_4";
+            Lb_4.Size = new Size(157, 113);
+            Lb_4.TabIndex = 3;
+            Lb_4.TabStop = false;
             // 
             // Lb_5
             // 
-            this.Lb_5.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__5_;
-            this.Lb_5.Location = new System.Drawing.Point(327, 304);
-            this.Lb_5.Name = "Lb_5";
-            this.Lb_5.Size = new System.Drawing.Size(151, 134);
-            this.Lb_5.TabIndex = 4;
-            this.Lb_5.TabStop = false;
+            Lb_5.Image = Properties.Resources.letöltés__5_;
+            Lb_5.Location = new Point(327, 304);
+            Lb_5.Name = "Lb_5";
+            Lb_5.Size = new Size(151, 134);
+            Lb_5.TabIndex = 4;
+            Lb_5.TabStop = false;
             // 
             // Lb_6
             // 
-            this.Lb_6.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__6_;
-            this.Lb_6.Location = new System.Drawing.Point(170, 286);
-            this.Lb_6.Name = "Lb_6";
-            this.Lb_6.Size = new System.Drawing.Size(151, 113);
-            this.Lb_6.TabIndex = 5;
-            this.Lb_6.TabStop = false;
+            Lb_6.Image = Properties.Resources.letöltés__6_;
+            Lb_6.Location = new Point(170, 286);
+            Lb_6.Name = "Lb_6";
+            Lb_6.Size = new Size(151, 113);
+            Lb_6.TabIndex = 5;
+            Lb_6.TabStop = false;
             // 
             // Lb_1
             // 
-            this.Lb_1.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés;
-            this.Lb_1.Location = new System.Drawing.Point(327, 12);
-            this.Lb_1.Name = "Lb_1";
-            this.Lb_1.Size = new System.Drawing.Size(151, 113);
-            this.Lb_1.TabIndex = 6;
-            this.Lb_1.TabStop = false;
+            Lb_1.Image = Properties.Resources.letöltés;
+            Lb_1.Location = new Point(327, 12);
+            Lb_1.Name = "Lb_1";
+            Lb_1.Size = new Size(151, 113);
+            Lb_1.TabIndex = 6;
+            Lb_1.TabStop = false;
             // 
             // Lb_8
             // 
-            this.Lb_8.Image = global::_18._6Kepetforgat.Properties.Resources.letöltés__4_;
-            this.Lb_8.Location = new System.Drawing.Point(166, 51);
-            this.Lb_8.Name = "Lb_8";
-            this.Lb_8.Size = new System.Drawing.Size(155, 110);
-            this.Lb_8.TabIndex = 7;
-            this.Lb_8.TabStop = false;
+            Lb_8.Image = Properties.Resources.letöltés__4_;
+            Lb_8.Location = new Point(166, 51);
+            Lb_8.Name = "Lb_8";
+            Lb_8.Size = new Size(155, 110);
+            Lb_8.TabIndex = 7;
+            Lb_8.TabStop = false;
             // 
             // btnJobb
             // 
-            this.btnJobb.Location = new System.Drawing.Point(656, 56);
-            this.btnJobb.Name = "btnJobb";
-            this.btnJobb.Size = new System.Drawing.Size(75, 23);
-            this.btnJobb.TabIndex = 8;
-            this.btnJobb.Text = "Jobb";
-            this.btnJobb.UseVisualStyleBackColor = true;
+            btnJobb.Location = new Point(656, 56);
+            btnJobb.Name = "btnJobb";
+            btnJobb.Size = new Size(75, 23);
+            btnJobb.TabIndex = 8;
+            btnJobb.Text = "Jobb";
+            btnJobb.UseVisualStyleBackColor = true;
             // 
             // btnBal
             // 
-            this.btnBal.Location = new System.Drawing.Point(43, 56);
-            this.btnBal.Name = "btnBal";
-            this.btnBal.Size = new System.Drawing.Size(75, 23);
-            this.btnBal.TabIndex = 9;
-            this.btnBal.Text = "Bal";
-            this.btnBal.UseVisualStyleBackColor = true;
+            btnBal.Location = new Point(43, 56);
+            btnBal.Name = "btnBal";
+            btnBal.Size = new Size(75, 23);
+            btnBal.TabIndex = 9;
+            btnBal.Text = "Bal";
+            btnBal.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnBal);
-            this.Controls.Add(this.btnJobb);
-            this.Controls.Add(this.Lb_8);
-            this.Controls.Add(this.Lb_1);
-            this.Controls.Add(this.Lb_6);
-            this.Controls.Add(this.Lb_5);
-            this.Controls.Add(this.Lb_4);
-            this.Controls.Add(this.Lb_3);
-            this.Controls.Add(this.Lb_2);
-            this.Controls.Add(this.Lb_7);
-            this.Name = "Form1";
-            this.Text = "Kép forgatás";
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Lb_8)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnBal);
+            Controls.Add(btnJobb);
+            Controls.Add(Lb_8);
+            Controls.Add(Lb_1);
+            Controls.Add(Lb_6);
+            Controls.Add(Lb_5);
+            Controls.Add(Lb_4);
+            Controls.Add(Lb_3);
+            Controls.Add(Lb_2);
+            Controls.Add(Lb_7);
+            Name = "Form1";
+            Text = "Kép forgatás";
+            ((System.ComponentModel.ISupportInitialize)Lb_7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lb_8).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
