@@ -10,13 +10,13 @@ namespace ATM_Console
 {
     internal class Program
     {
-        String cardNum;
-        int pin;
-        String firstName;
-        String lastName;
-        double balance;
+        String cardNum; // Szöveg változó
+        int pin; // Szám változó
+        String firstName; // Szöveg változó 
+        String lastName; // Szöveg változó
+        double balance; // A számjegyet adja meg hogy mennyi bájtba tudja megadni.
 
-        public Program(string cardNum, int pin, string firstName, string lastName, double balance)
+        public Program(string cardNum, int pin, string firstName, string lastName, double balance) // Meghívja az osztály változót
         {
             this.cardNum = cardNum;
             this.pin = pin;
