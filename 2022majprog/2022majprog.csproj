@@ -7,7 +7,7 @@
     <ProjectGuid>{87876EA8-1FAC-4E38-97DF-EE9649AC4767}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_2022majprog</RootNamespace>
-    <AssemblyName>_2022majprog</AssemblyName>
+    <AssemblyName>2022majprog</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
