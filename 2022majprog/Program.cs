@@ -7,7 +7,7 @@ using System.IO;
 
 namespace _2022majprog
 {
-    internal class Program
+    internal class Program 
     {
         struct Telek
         {

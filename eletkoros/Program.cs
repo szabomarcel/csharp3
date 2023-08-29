@@ -50,7 +50,7 @@ namespace eletkoros
                     Console.WriteLine("Az apa {0} éves volt amikor a fiú megszületett.", x);
                 }
             }
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }

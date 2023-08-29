@@ -27,7 +27,7 @@ namespace tarsalgo_18maj
             feladat_6();
             feladat_7();
             feladat_8();
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
 
         private static void feladat_8()

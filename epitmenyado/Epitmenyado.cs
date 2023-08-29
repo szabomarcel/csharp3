@@ -8,7 +8,7 @@ using System.ComponentModel.Design;
 
 namespace epitmenyado
 {
-    internal class Epitmenyado
+    internal class Epitmenyado 
     {
         struct Telkek
         {

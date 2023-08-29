@@ -25,7 +25,7 @@ namespace csillag1
                     System.Threading.Thread.Sleep(5);
                 }
             }
-            System.Threading.Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(3000); 
         }
     }
 }

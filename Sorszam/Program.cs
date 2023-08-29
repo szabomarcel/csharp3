@@ -30,7 +30,7 @@ namespace Sorszam
                 if(db == 10)
                     Console.WriteLine("A vektor fel lett töltve teljesen.");
             }
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }

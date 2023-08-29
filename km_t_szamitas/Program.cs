@@ -25,7 +25,7 @@ namespace km_t_szamitas
                 {
                     if ((km % 5 == 0) && ((km % 3 == 0)))
                     {
-                        Console.WriteLine("{0}, ", km);
+                        Console.WriteLine("{0}, ", km); 
                     }
                     km++;
                 }

@@ -9,7 +9,7 @@ namespace tombelemek_atlaga_tomb_vizsgalata
     internal class Program
     {
         static int[] szamok = new int[30];
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             tomb_feltotes();
             Console.WriteLine("A tömb tartalma: ");

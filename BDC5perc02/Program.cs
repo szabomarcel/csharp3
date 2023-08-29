@@ -10,7 +10,7 @@ namespace BDC5perc02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Két kockával dobok: ");
+            Console.WriteLine("Két kockával dobok: "); 
             Random r = new Random();
 
             int db12 = 0;

@@ -20,7 +20,7 @@ namespace szorzat
             {
                 szorozat = szorozat + a;
             }
-            Console.Write("\nSzorzatuk: {0}", szorozat);
+            Console.Write("\nSzorzatuk: {0}", szorozat); 
             Console.ReadLine();
         }
     }

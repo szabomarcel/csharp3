@@ -9,7 +9,7 @@ namespace ceges.auto
 {
     internal class Program
     {
-        struct Adatok
+        struct Adatok 
         {
             public int nap;
             public string ido;

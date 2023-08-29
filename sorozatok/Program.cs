@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace sorozatok
 {
-    class Sorozat
+    class Sorozat 
     {
         public string Datum { get; set; }
         public string Cim { get; set; }
