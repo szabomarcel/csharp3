@@ -34,7 +34,7 @@ namespace a7napjai
                 case 6: Console.WriteLine("Szombat"); break;
                 case 7: Console.WriteLine("Vasárnap"); break;
             }
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }

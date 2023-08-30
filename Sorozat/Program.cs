@@ -25,7 +25,7 @@ namespace Sorozat
                 }
             }
             Console.WriteLine("A sorozat legkissebb eleme: {0}", minimum);
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }

@@ -22,7 +22,7 @@ namespace eredmeny
                 }
                 Console.WriteLine("A szám faktoriálisa: {0}", eredmeny);
             }
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }
