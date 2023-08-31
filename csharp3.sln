@@ -261,6 +261,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorozat", "Sorozat\Sorozat.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "a7napjai", "a7napjai\a7napjai.csproj", "{C9F6CD7E-2226-458C-BFF3-BAB56D43A012}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eredmeny", "eredmeny\eredmeny.csproj", "{30D9800B-CE6B-4B44-A211-083421C03D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -707,6 +709,10 @@ Global
 		{C9F6CD7E-2226-458C-BFF3-BAB56D43A012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F6CD7E-2226-458C-BFF3-BAB56D43A012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F6CD7E-2226-458C-BFF3-BAB56D43A012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D9800B-CE6B-4B44-A211-083421C03D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D9800B-CE6B-4B44-A211-083421C03D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D9800B-CE6B-4B44-A211-083421C03D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D9800B-CE6B-4B44-A211-083421C03D2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -816,6 +822,7 @@ Global
 		{DDAC946F-E94E-4001-B48C-22483D999D19} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
 		{F31A83C8-81F4-467C-BB1F-9FB31FD28090} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
 		{C9F6CD7E-2226-458C-BFF3-BAB56D43A012} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
+		{30D9800B-CE6B-4B44-A211-083421C03D2F} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80D99356-6591-4DBE-ACF4-9FABF1277413}
