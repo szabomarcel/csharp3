@@ -74,7 +74,7 @@ namespace OOP_1lap
             }
             return sz;
         }
-        private char Szin
+        private char Szin 
         { get => szin;
             set
             {
