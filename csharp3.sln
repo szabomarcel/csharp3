@@ -267,6 +267,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_1", "OOP_1\OOP_1.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_1lap", "OOP_1lap\OOP_1lap.csproj", "{C4832F9D-4C4B-4A6A-A4AC-33B82F7E0052}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karakter_dekodolo", "Karakter_dekodolo\Karakter_dekodolo.csproj", "{DDCD7139-32BB-4279-A1C1-512806482434}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -725,6 +727,10 @@ Global
 		{C4832F9D-4C4B-4A6A-A4AC-33B82F7E0052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4832F9D-4C4B-4A6A-A4AC-33B82F7E0052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4832F9D-4C4B-4A6A-A4AC-33B82F7E0052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDCD7139-32BB-4279-A1C1-512806482434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCD7139-32BB-4279-A1C1-512806482434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCD7139-32BB-4279-A1C1-512806482434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCD7139-32BB-4279-A1C1-512806482434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -837,6 +843,7 @@ Global
 		{30D9800B-CE6B-4B44-A211-083421C03D2F} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
 		{8293F8F3-DEC1-4D41-8693-A0796169634B} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
 		{C4832F9D-4C4B-4A6A-A4AC-33B82F7E0052} = {EFC1FC6C-8E04-47A3-A260-1B6AE5AABEC3}
+		{DDCD7139-32BB-4279-A1C1-512806482434} = {4309E553-FD74-49DA-A2D7-8AEDEFD38971}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80D99356-6591-4DBE-ACF4-9FABF1277413}
