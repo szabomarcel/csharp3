@@ -32,10 +32,12 @@ namespace FIFAvilagranglista
 
        public Fifa(string csapat1)
         {
-            string[] csapat = csapat1.Split(';');
-            this.HeIyezes1 = csapat1[1];
-            this.Valtozas1 = csapat1[2];
-            this.Pontszam1 = csapat1[3];
-        }        
+            string[] strings = csapat1.Split(';');
+            this.Csapat1 = strings[0];
+            this.HeIyezes1 = int.Parse(strings[1]);
+            this.Valtozas1 = int.Parse(strings[2]);
+            this.Pontszam1 = int.Parse(strings[3]);
+        }
+        
     }
 }

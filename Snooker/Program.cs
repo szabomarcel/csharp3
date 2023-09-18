@@ -24,7 +24,7 @@ namespace Snooker
 
         private static void feladat7()
         {
-            Console.WriteLine("\t7.feladat: Statisztika");
+            Console.WriteLine("\n7.feladat: Statisztika");
             foreach (var item in smooker.FindAll(z => z.Helyezes1 == 0).GroupBy(a => a.Nev1).Select(b => new { ok = b.Key, db = b.Count() }))
             {
                 if (item.db > 2)
@@ -68,7 +68,7 @@ namespace Snooker
         {
             try
             {
-                using (StreamReader file = new StreamReader("smooker"))
+                using (StreamReader file = new StreamReader("smooker.txt"))
                 {
                     file.ReadLine();
                     while (!file.EndOfStream)
