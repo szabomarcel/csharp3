@@ -279,6 +279,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snooker", "Snooker\Snooker.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bekertnev", "bekertnev\bekertnev.csproj", "{035E84FC-36C1-43F4-8C71-C1EB617269EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sikidom", "sikidom\sikidom.csproj", "{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -757,6 +759,10 @@ Global
 		{035E84FC-36C1-43F4-8C71-C1EB617269EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{035E84FC-36C1-43F4-8C71-C1EB617269EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{035E84FC-36C1-43F4-8C71-C1EB617269EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -874,6 +880,7 @@ Global
 		{E610B0DB-2D0D-4932-8F18-4092E20BFBF9} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
 		{6DE88FE3-0FB6-4680-9CB4-229EA547E8A6} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
 		{035E84FC-36C1-43F4-8C71-C1EB617269EE} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
+		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80D99356-6591-4DBE-ACF4-9FABF1277413}
