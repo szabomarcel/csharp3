@@ -14,6 +14,8 @@ namespace sikidom
             sikidoms.Add(new Haromszog(120));
             sikidoms.Add(new Trapez(100));
             sikidoms.Add(new Paralelogramma(112));
+            sikidoms.Add(new Negyzet(212)); 
+            sikidoms.Add(new Teglalap(311));
             foreach (var item in sikidoms)
             {
                 Console.WriteLine($"Területe: {item.Terulet()} - Kerülete: {item.Kerulet()}");
