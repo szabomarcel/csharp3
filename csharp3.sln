@@ -281,6 +281,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bekertnev", "bekertnev\beke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sikidom", "sikidom\sikidom.csproj", "{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "husvetifeladat", "husvetifeladat\husvetifeladat.csproj", "{06A1F081-7FC4-4E08-B7B1-4A0ACF99614E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hatvany", "hatvany\hatvany.csproj", "{8010149B-8F53-40A3-BF2E-66D3D59ED59F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -763,6 +767,14 @@ Global
 		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A1F081-7FC4-4E08-B7B1-4A0ACF99614E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A1F081-7FC4-4E08-B7B1-4A0ACF99614E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A1F081-7FC4-4E08-B7B1-4A0ACF99614E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A1F081-7FC4-4E08-B7B1-4A0ACF99614E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
