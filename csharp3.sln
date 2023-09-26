@@ -285,6 +285,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "husvetifeladat", "husvetife
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hatvany", "hatvany\hatvany.csproj", "{8010149B-8F53-40A3-BF2E-66D3D59ED59F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autotipus", "autotipus\autotipus.csproj", "{0AB2D0EA-D098-4CF7-809B-027A09EDA492}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -775,6 +777,10 @@ Global
 		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8010149B-8F53-40A3-BF2E-66D3D59ED59F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB2D0EA-D098-4CF7-809B-027A09EDA492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB2D0EA-D098-4CF7-809B-027A09EDA492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB2D0EA-D098-4CF7-809B-027A09EDA492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB2D0EA-D098-4CF7-809B-027A09EDA492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -893,6 +899,7 @@ Global
 		{6DE88FE3-0FB6-4680-9CB4-229EA547E8A6} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
 		{035E84FC-36C1-43F4-8C71-C1EB617269EE} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
 		{F57AD3BC-B19F-4EE6-91E9-8673BAE2AEF3} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
+		{0AB2D0EA-D098-4CF7-809B-027A09EDA492} = {AC93D9C0-F633-41C1-8D4F-62948AF75252}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80D99356-6591-4DBE-ACF4-9FABF1277413}

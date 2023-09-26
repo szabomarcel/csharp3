@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace autotipus
+{
+    internal class Auto : Jarmuvek
+    {
+        readonly string rendszam, uzemanya;
+        public string Uzemanyag { get => uzemanyag; }
+        public string Rendszamtabala { get => rendszamtabala; }
+
+        public Auto(string rendszam, string uzemanya) : base("Auto", rendszam)
+        {
+            this.rendszam = rendszam;
+            this.uzemanya = uzemanya;
+        }
+        public string Rendszam => rendszam;
+        public string Uzemanya => uzemanya;
+
+        public abstract string benzin();
+        public abstract string diesel();
+        public abstract string electric();
+        public override string ToString()
+        {
+            return uzemanyag;
+        }
+    }
+}
